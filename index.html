@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador - Folha de pagamento</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="tela tela-1">
+            <h1 class="title">Curso Técnico em Contabilidade</h1>
+            <img src="assets/img/capa/capa_titulo.png" alt="Simulador de Folha de Pagamento" class="titulo">
+            <button class="btn-iniciar ui-btn">Iniciar</button>
+        </div>
+        <div class="tela tela-2">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+            </div>
+            <div class="ui-msg">
+                <p>Olá, seja bem-vindo!</p>
+                <p>Como técnico contábil do escritório de Excelência, uma das suas atribuições é realizar o cálculo da
+                    folha de pagamento dos clientes.</p>
+                <p>Hoje, sua tarefa será calcular a folha de pagamento do cliente Osvaldo e Luzia Serviços de Limpeza e
+                    Conservação Ltda, calcular os encargos e impostos e gerar as respectivas guias/DARFs.</p>
+                <p>Vamos lá?</p>
+                <p>Clique no botão <b>INICIAR</b> e acesse a (aba) <b>TELA INICIAL</b>, onde você encontrará o passo a
+                    passo.</p>
+                <button class="btn-proximo ui-btn">Avançar</button>
+            </div>
+        </div>
+        <div class="tela tela-3">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+            </div>
+            <p class="index">Passo-a-passo para calcular a Folha de Pagamento</p>
+            <div class="ui-msg-escura">
+                <img src="assets/img/img_instru_01.png" class="avatar-1" />
+                <div class="text">
+                    <p>Aqui você encontrará os dados do cliente para realizar o cálculo da Folha de Pagamento.</p>
+                    <p>Este cliente tem dois colaboradores e dois prolabores. É uma empresa optante pelo Simples
+                        Nacional - Faturamento pelo Anexo IV, e por isso terá INSS PATRONAL.</p>
+                    <p>Fique atento!</p>
+                </div>
+            </div>
+            <div class="ui-dados-empresa">
+                <div class="ui-msg">
+                    <h3>Dados da empresa:</h3>
+                    <p>Razão Social: Osvaldo e Luzia Serviços de Limpeza e Conservação Ltda<br>
+                        CNPJ: 60.693.507/0001-08</p>
+                </div>
+            </div>
+            <button class="btn-proximo ui-btn bottom-right">Avançar</button>
+        </div>
+        <div class="tela tela-4">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <button class="bt-1-passo"></button>
+                <button class="bt-2-passo inativo"></button>
+                <button class="bt-3-passo inativo"></button>
+                <button class="bt-4-passo inativo"></button>
+            </div>
+            <p class="index">Passo-a-passo para calcular a Folha de Pagamento</p>
+            <div class="ui-msg-escura">
+                <div class="text">
+                    <p>No primeiro dia útil do mês corrente, o cliente Osvaldo e Luzia Serviços de Limpeza e Conservação
+                        Ltda enviou um e-mail com as informações para calcular a folha de pagamento do mês anterior.</p>
+                    <p>Para cálculo da folha de pagamento e emissão das DARFs e Guias, você irá seguir os seguintes
+                        passos:</p>
+                </div>
+                <img src="assets/img/img_instru_02.png" alt="" class="avatar-2">
+            </div>
+        </div>
+        <div class="tela primeiro-passo">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <button class="bt-tabela-contribuicao bt-pop-up" data-pop="1"></button>
+                <button class="bt-tabela-dados bt-pop-up" data-pop="2"></button>
+            </div>
+            <p class="index">PASSO 1 - Dados da Folha de Pagamento</p>
+            <div class="flex-vertical">
+                <div class="ui-msg-escura">
+                    <div class="text">
+                        <p>Nesta tela, são apresentados o resumo dos dados da folha (recebido por e-mail do cliente) e
+                            as tabelas de INSS e IR, também terá a informação de como foi calculado os dias úteis de
+                            descanso para base do DSR (Descanso Semanal Remunerado), este último usaremos para DSR das
+                            horas extras e comissão.</p>
+                    </div>
+                </div>
+                <div class="ui-msg">
+                    <h3>Cálculo DSR</h3>
+                    <p>DSR: Mês de referência: Setembro de 2023 (tem 30 dias, sendo que 24 dias úteis, 2 feriados no Rio
+                        Grande do Sul e 4 domingos).<br>
+                        Base para o DSR é 24 dias úteis e 6 dias de descanso remunerado.</p>
+                </div>
+                <button class="ui-btn btn-continuar continuar-1 inativo">Continuar</button>
+            </div>
+        </div>
+        <div class="tela segundo-passo">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <button class="bt-tabela-formulas bt-pop-up" data-pop="3"></button>
+                <button class="bt-tabela-calculo-folha bt-pop-up" data-pop="4"></button>
+            </div>
+            <p class="index">PASSO 2 - Dados da Folha de Pagamento</p>
+            <div class="flex-vertical">
+                <div class="ui-msg-escura">
+                    <div class="text">
+                        <p>Aqui você realizará os cálculos da folha das colaboradoras Solange e Mariana. Para isso, você
+                            deverá calcular os proventos e descontos, conforme as fórmulas apresentadas. No final de
+                            cada fórmula, você encontrará uma lista de valores, então selecione o valor conforme o
+                            resultado do cálculo apresentado. Para isso, clique e selecione a resposta correta
+                            (verificar o resumo - máximo de três linhas).</p>
+                    </div>
+                </div>
+                <button class="ui-btn btn-continuar continuar-2 inativo">Continuar</button>
+            </div>
+        </div>
+        <div class="tela terceiro-passo">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <button class="bt-tabela-formulas bt-pop-up" data-pop="5"></button>
+                <button class="bt-tabela-calculo-folha bt-pop-up" data-pop="6"></button>
+            </div>
+            <p class="index">PASSO 3 - Dados da Folha de Pagamento</p>
+            <div class="flex-vertical">
+                <div class="ui-msg-escura">
+                    <div class="text">
+                        <p>Aqui você realizará os cálculos da folha dos sócios Michele e Rodrigo.</p>
+                        <p>Para isso, deverá realizar os cálculos dos proventos e descontos, conforme as fórmulas
+                            apresentadas. No final de cada fórmula, você encontrará uma lista de valores, então
+                            selecione o valor conforme o resultado do cálculo apresentado.</p>
+                        <p>Após ter recebido o feedback positivo em todas as fórmulas, você irá para o próximo passo,
+                            RESUMO DA FOLHA DE PAGAMENTO, no qual poderá conferir o resultado do seu trabalho e
+                            concluí-lo emitindo as guias e os recibos.</p>
+                        <p><b>Acesse ao lado</b> a lista de fórmulas e selecione o valor correto do resultado.</p>
+                    </div>
+                </div>
+                <div class="ui-msg">
+                    <h3>Cálculo DSR</h3>
+                    <p>DSR: Mês de referência: Setembro de 2023 (tem 30 dias, sendo que 24 dias úteis, 2 feriados no Rio
+                        Grande do Sul e 4 domingos).<br>
+                        Base para o DSR é 24 dias úteis e 6 dias de descanso remunerado.</p>
+                </div>
+                <button class="ui-btn btn-continuar continuar-3 inativo">Continuar</button>
+            </div>
+        </div>
+        <div class="tela quarto-passo">
+            <div class="menu-esq">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
+                <button class="bt-resumo-folha bt-pop-up" data-pop="7"></button>
+                <button class="bt-comprovantes bt-pop-up" data-pop="8"></button>
+            </div>
+            <p class="index">PASSO 4 - Dados da Folha de Pagamento</p>
+            <div class="flex-vertical">
+                <div class="ui-msg-escura">
+                    <div class="text">
+                        <p>Aqui você visualizará o resumo da folha; assim, poderá realizar o cálculo do <b>INSS
+                                PATRONAL</b>.</p>
+                        <p>Como a empresa é optante pelo Simples Nacional, enquadrada no Anexo IV, você terá de calcular
+                            o <b>INSS PATRONAL</b>. Vco6E deverá realizar o cálculo e selecionar o valor correto.</p>
+                        <p>Após ter recebido o <em>feedback</em> positivo na fórmula, você poderá emitir as guias e os
+                            recibos, basta clicar nos nomes correspondentes.</p>
+                    </div>
+                </div>
+                <button class="ui-btn btn-continuar continuar-4 inativo">Continuar</button>
+            </div>
+        </div>
+        <div class="pop-up pop-up-1" data-pop="1">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <img class="tabela" src="assets/img/tabelas/01_dados_folha/tabela_contribuicao_inss.png" alt="">
+                <img class="tabela" src="assets/img/tabelas/01_dados_folha/tabela_IRRF.png" alt="">
+            </div>
+        </div>
+        <div class="pop-up pop-up-2" data-pop="2">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <img class="tabela" src="assets/img/tabelas/01_dados_folha/tabela_base_calculo_colabs.png" alt="">
+                <img class="tabela" src="assets/img/tabelas/01_dados_folha/tabela_base_calculo_socios.png" alt="">
+            </div>
+        </div>
+        <div class="pop-up pop-up-3" data-pop="3">
+
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <p>A seguir você encontrará as fórmulas. Faça o cálculo indicado e selecione a resposta correta!</p>
+
+            <h4>Fórmulas Solange Maria Pereira</h4>
+            <div class="flex">
+                <table>
+                    <tr>
+                        <th colspan="4">HORAS 50% = [(SALÁRIO-BASE/220) x HORAS EXTRAS]+50%</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE/220H<br>
+                            Aqui teremos o valor SALÁRIO HORA
+                        </th>
+                        <th>
+                            Total hora extra R$<br>
+                            (SALÁRIO HORA x horas extras)
+                        </th>
+                        <th>
+                            Cálculo hora 50%<br>
+                            (Total hora extra R$ x 50%)
+                        </th>
+                        <th>
+                            Total hora extra 50%<br>
+                            Total hora extra R$ + Cálculo hora 50%
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 8,59</td>
+                        <td>R$25,77</td>
+                        <td>R$ 12,89</td>
+                        <td class="select-container">
+                            <select name="formula-1" id="formula-1">
+                                <option value=""></option>
+                                <option value="errado">R$ 32,23</option>
+                                <option value="errado">R$ 38,02</option>
+                                <option value="correto">R$ 38,66</option>
+                                <option value="errado">R$ 36,87</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">DSR HORA EXTRA = (HORAS 50% / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)</th>
+                    </tr>
+                    <tr>
+                        <th>Total hora extra 50%</th>
+                        <th>
+                            R$ dia útil<br>
+                            (Total hora extra R$/24 DIAS ÚTEIS)
+                        </th>
+                        <th>
+                            Total do DSR<br>
+                            (R$ dia útil x 6 dias)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 38,66</td>
+                        <td>R$ 1,61</td>
+                        <td class="select-container">
+                            <select name="formula-2" id="formula-2">
+                                <option value=" "> </option>
+                                <option value="errado">R$ 7,52</option>
+                                <option value="correto">R$ 9,66</option>
+                                <option value="errado">R$ 10,37</option>
+                                <option value="errado">R$ 11,49</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">
+                            DSR COMISSÃO = (COMISSÃO / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>COMISSÃO</th>
+                        <th>
+                            R$ dia útil<br>
+                            (Total comissão/24 DIAS ÚTEIS)
+                        </th>
+                        <th>
+                            Total do DSR<br>
+                            (R$ dia útil x 6 dias)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> R$ 1.285,00 </td>
+                        <td> R$ 53,54 </td>
+                        <td class="select-container">
+                            <select name="formula-3" id="formula-3">
+                                <option value=" "> </option>
+                                <option value="errado">R$ 256,54</option>
+                                <option value="errado">R$ 299,81</option>
+                                <option value="errado">R$ 304,16</option>
+                                <option value="correto">R$ 312,25</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">DESCONTO VALE-ALIMENTAÇÃO = (VALOR DO VALE X 24 DIAS ÚTEIS) X 10% </th>
+                    </tr>
+                    <tr>
+                        <th>VALE-ALIMENTAÇÃO<br>
+                            VALOR DIA</th>
+                        <th>
+                            Total do mês<br>
+                            (VALE-ALIMENTAÇÃO VALOR DIA /24 DIAS ÚTEIS)
+                        </th>
+                        <th>
+                            Desconto VA<br>
+                            (Total mês x 10%)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> R$ 25,00 </td>
+                        <td> R$ 600,00 </td>
+                        <td class="select-container">
+                            <select name="formula-4" id="formula-4">
+                                <option value=" "> </option>
+                                <option value="errado">R$ 35,00</option>
+                                <option value="correto">R$ 60,00</option>
+                                <option value="errado">R$ 75,00</option>
+                                <option value="errado">R$ 80,00</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">DESCONTO VT = SALÁRIO-BASE x 6% </th>
+                    </tr>
+                    <tr>
+                        <th>SALÁRIO-BASE</th>
+                        <th>
+                            Desconto VT<br>
+                            (salário-base x 6%)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            R$ 1.890,00
+                        </td>
+                        <td class="select-container">
+                            <select name="formula-5" id="formula-5">
+                                <option value=" "> </option>
+                                <option value="correto">R$ 113,40</option>
+                                <option value="errado">R$ 159,12</option>
+                                <option value="errado">R$ 207,88</option>
+                                <option value="errado">R$ 326,71</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">FALTAS = (SALÁRIO-BASE/220) x HORAS DE FALTA </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE/220H<br>
+                            Aqui teremos o valor SALÁRIO HORA
+                        </th>
+                        <th>
+                            DESCONTO HORAS DE ATRASO<br>
+                            (SALÁRIO HORA x horas falta)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> R$ 8,59 </td>
+                        <td class="select-container">
+                            <select name="formula-6" id="formula-6">
+                                <option value=" "> </option>
+                                <option value="errado">R$ 18,26</option>
+                                <option value="correto">R$ 25,77</option>
+                                <option value="errado">R$ 33,59</option>
+                                <option value="errado">R$ 38,62</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="5">
+                            DESCONTO INSS COLABORADOR = (TOTAL BRUTO - HORA DE ATRASO x ALÍQUOTA DO INSS) - DEDUÇÃO DO
+                            INSS
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE INSS<br>
+                            (TOTAL BRUTO - HORA ATRASO)
+                        </th>
+                        <th>
+                            ALÍQUOTA INSS<br>
+                            (Buscar na tabela INSS a alíquota %)
+                        </th>
+                        <th>
+                            SUB TOTAL<br>
+                            (Salário-base x alíquota INSS %)
+                        </th>
+                        <th>
+                            PARCELA REDUTORA<br>
+                            (Buscar na tabela INSS o valor da parcela redutora)
+                        </th>
+                        <th>
+                            DESCONTO INSS<br>
+                            (subtotal - parcela redutora)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> R$ 3.518,80 </td>
+                        <td>12%</td>
+                        <td> R$ 422,26 </td>
+                        <td> R$ 96,94 </td>
+                        <td class="select-container">
+                            <select name="formula-7" id="formula-7">
+                                <option value=" "> </option>
+                                <option value="errado">R$ 218,44</option>
+                                <option value="errado">R$ 287,26</option>
+                                <option value="errado">R$ 316,84</option>
+                                <option value="correto">R$ 325,32</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="6">BASE DE CÁLCULO IRRF = TOTAL BRUTO - HORAS FALTA - DESCONTO INSS - VL
+                            DEPENDENTES</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO BASE IR<br>
+                            (TOTAL BRUTO - HORA ATRASO-DESC. INSS)
+                        </th>
+                        <th>
+                            SUBTOTAL<br>
+                            (SALÁRIO-BASE IR - DEPENDENTE)
+                        </th>
+                        <th>
+                            ALÍQUOTA IR<br>
+                            (Buscar na tabela IR a alíquota %)
+                        </th>
+                        <th>
+                            SUB TOTAL<br>
+                            (Salário-base x alíquota IR %)
+                        </th>
+                        <th>
+                            PARCELA REDUTORA<br>
+                            (Buscar na tabela IR o valor da parcela redutora)
+                        </th>
+                        <th>
+                            DESCONTO IR<br>
+                            (subtotal - parcela redutora)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 3.193,49</td>
+                        <td>R$ 3.003,90</td>
+                        <td>15%</td>
+                        <td>R$ 450,58</td>
+                        <td>R$ 370,40</td>
+                        <td class="select-container">
+                            <select name="formula-8" id="formula-8">
+                                <option value=" "> </option>
+                                <option value="correto">R$ 80,18</option>
+                                <option value="errado">R$ 92,40</option>
+                                <option value="errado">R$ 107,52</option>
+                                <option value="errado">R$ 119,90</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">TOTAL DE FGTS = (TOTAL BRUTO - HORAS DE ATRASO) x 8%</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE FGTS<br>
+                            (TOTAL BRUTO - HORA ATRASO)
+                        </th>
+                        <th>
+                            FGTS A RECOLHER<br>
+                            (salário-base x 8%)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 3.518,80</td>
+                        <td class="select-container">
+                            <select name="formula-9" id="formula-9">
+                                <option value=" "> </option>
+                                <option value="errado">R$ 218,15</option>
+                                <option value="correto">R$ 281,50</option>
+                                <option value="errado">R$ 327,36</option>
+                                <option value="errado">R$ 359,80</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>Fórmulas Mariana Moraes da Rosa</h4>
+            <div class="flex">
+                <table>
+                    <tr>
+                        <th colspan="4">HORAS 50% = [(SALÁRIO-BASE/220) x HORAS EXTRAS]+50%</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE/220H<br>
+                            Aqui teremos o valor SALÁRIO HORA
+                        </th>
+                        <th>
+                            Total hora extra R$<br>
+                            (SALÁRIO HORA x horas extras)
+                        </th>
+                        <th>
+                            Cálculo hora 50%<br>
+                            (Total hora extra R$ x 50%)
+                        </th>
+                        <th>
+                            Total hora extra 50%<br>
+                            Total hora extra R$ + Cálculo hora 50%
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 9,55</td>
+                        <td>R$38,18</td>
+                        <td>R$ 19,09</td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">DSR HORA EXTRA = (HORAS 50% / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)</th>
+                    </tr>
+                    <tr>
+                        <th>Total hora extra 50%</th>
+                        <th>
+                            R$ dia útil<br>
+                            (Total hora extra R$/24 DIAS ÚTEIS)
+                        </th>
+                        <th>
+                            Total do DSR<br>
+                            (R$ dia útil x 6 dias)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 57,27</td>
+                        <td>R$ 2,39</td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">
+                            DSR COMISSÃO = (COMISSÃO / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>COMISSÃO</th>
+                        <th>
+                            R$ dia útil<br>
+                            (Total comissão/24 DIAS ÚTEIS)
+                        </th>
+                        <th>
+                            Total do DSR<br>
+                            (R$ dia útil x 6 dias)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> R$ 1.490,00 </td>
+                        <td> R$ 62,08 </td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="3">DESCONTO VALE-ALIMENTAÇÃO = (VALOR DO VALE X 24 DIAS ÚTEIS) X 10% </th>
+                    </tr>
+                    <tr>
+                        <th>VALE-ALIMENTAÇÃO<br>
+                            VALOR DIA</th>
+                        <th>
+                            Total do mês<br>
+                            (VALE-ALIMENTAÇÃO VALOR DIA /24 DIAS ÚTEIS)
+                        </th>
+                        <th>
+                            Desconto VA<br>
+                            (Total mês x 10%)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td> R$ 25,00 </td>
+                        <td> R$ 600,00 </td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">DESCONTO VT = SALÁRIO-BASE x 6% </th>
+                    </tr>
+                    <tr>
+                        <th>SALÁRIO-BASE</th>
+                        <th>
+                            Desconto VT<br>
+                            (salário-base x 6%)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            R$ 2.100,00
+                        </td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">FALTAS = (SALÁRIO-BASE/220) x HORAS DE FALTA </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE/220H<br>
+                            Aqui teremos o valor SALÁRIO HORA
+                        </th>
+                        <th>
+                            DESCONTO HORAS DE ATRASO<br>
+                            (SALÁRIO HORA x horas falta)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 9,55</td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="5">
+                            DESCONTO INSS COLABORADOR = (TOTAL BRUTO - HORA DE ATRASO x ALÍQUOTA DO INSS) - DEDUÇÃO DO
+                            INSS
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE INSS<br>
+                            (TOTAL BRUTO - HORA ATRASO)
+                        </th>
+                        <th>
+                            ALÍQUOTA INSS<br>
+                            (Buscar na tabela INSS a alíquota %)
+                        </th>
+                        <th>
+                            SUB TOTAL<br>
+                            (Salário-base x alíquota INSS %)
+                        </th>
+                        <th>
+                            PARCELA REDUTORA<br>
+                            (Buscar na tabela INSS o valor da parcela redutora)
+                        </th>
+                        <th>
+                            DESCONTO INSS<br>
+                            (subtotal - parcela redutora)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 4.015,00</td>
+                        <td>14%</td>
+                        <td>R$ 562,10</td>
+                        <td>R$ 174,08</td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="6">BASE DE CÁLCULO IRRF = TOTAL BRUTO - HORAS FALTA - DESCONTO INSS - VL
+                            DEPENDENTES</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO BASE IR<br>
+                            (TOTAL BRUTO - HORA ATRASO-DESC. INSS)
+                        </th>
+                        <th>
+                            SUBTOTAL<br>
+                            (SALÁRIO-BASE IR - DEPENDENTE)
+                        </th>
+                        <th>
+                            ALÍQUOTA IR<br>
+                            (Buscar na tabela IR a alíquota %)
+                        </th>
+                        <th>
+                            SUB TOTAL<br>
+                            (Salário-base x alíquota IR %)
+                        </th>
+                        <th>
+                            PARCELA REDUTORA<br>
+                            (Buscar na tabela IR o valor da parcela redutora)
+                        </th>
+                        <th>
+                            DESCONTO IR<br>
+                            (subtotal - parcela redutora)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 3.626,98</td>
+                        <td>R$ 3.437,39</td>
+                        <td>15%</td>
+                        <td>R$ 515,61</td>
+                        <td>R$ 370,40</td>
+                        <td class="select-container">
+                            <select name="testes" id="testes">
+                                <option value=" "> </option>
+                                <option value="opcao-1">Opcao 1</option>
+                                <option value="opcao-2">Opcao 2</option>
+                                <option value="opcao-3">Opcao 3</option>
+                                <option value="opcao-4">Opcao 4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th colspan="2">TOTAL DE FGTS = (TOTAL BRUTO - HORAS DE ATRASO) x 8%</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            SALÁRIO-BASE FGTS<br>
+                            (TOTAL BRUTO - HORA ATRASO)
+                        </th>
+                        <th>
+                            FGTS A RECOLHER<br>
+                            (salário-base x 8%)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>R$ 4.015,00</td>
+                        <td>R$ 321,20</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="pop-up pop-up-4" data-pop="4">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <table>
+                    <tr>
+                        <th colspan='4'>Resumo do Cálculo da Folha de pagamento Setembro/2023</th>
+                    </tr>
+                    <tr>
+                        <th colspan='4'>Empresa: Osvaldo e Luzia Serviços de Limpeza e Conservação Ltda.</th>
+                    </tr>
+                    <tr>
+                        <th colspan='4'>CNPJ: 60.693.507/0001-08</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Colaborador: Solange Maria Pereira</td>
+                        <td colspan="2">Cargo: Vendedor(a) Júnior</td>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Proventos</th>
+                        <th>Valor</th>
+                        <th>Descontos</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Salário-base</td>
+                        <td>1.890,00</td>
+                        <td>Desconto adiantamento</td>
+                        <td>720,00</td>
+                    </tr>
+                    <tr>
+                        <td>Horas Extras - 3:00H 50%</td>
+                        <td>38,66</td>
+                        <td>Desconto Vale-alimentação</td>
+                        <td>60,00</td>
+                    </tr>
+                    <tr>
+                        <td>DSR Horas Extras</td>
+                        <td>9,66</td>
+                        <td>Desconto VT</td>
+                        <td>113,40</td>
+                    </tr>
+                    <tr>
+                        <td>Comissão</td>
+                        <td>1.285,00</td>
+                        <td>Desconto horas de atraso - 3 horas</td>
+                        <td>25,77</td>
+                    </tr>
+                    <tr>
+                        <td>DSR comissão</td>
+                        <td>312,25</td>
+                        <td>Desconto INSS</td>
+                        <td>325,32</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Desconto IRRF</td>
+                        <td>80,18</td>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total Bruto</th>
+                        <th>3.544,57</th>
+                        <th>Total de descontos</th>
+                        <th>1.324,67</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th></th>
+                        <th></th>
+                        <th>Total líquido</th>
+                        <th>2.219,90</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th colspan="2">Total dos Encargos</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total de INSS</th>
+                        <th>325,32</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total de IRRF</th>
+                        <th>80,18</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total de FGTS</th>
+                        <th>281,50</th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="2">Colaborador: Mariana Moraes da Rosa</td>
+                        <td colspan="2">Cargo: Vendedor(a)</td>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Proventos</th>
+                        <th>Valor</th>
+                        <th>Descontos</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Salário-base</td>
+                        <td>2.100,00</td>
+                        <td>Desconto adiantamento</td>
+                        <td>810,00</td>
+                    </tr>
+                    <tr>
+                        <td>Horas Extras - 4:00H 50%</td>
+                        <td>57,27</td>
+                        <td>Desconto Vale-alimentação</td>
+                        <td>60,00</td>
+                    </tr>
+                    <tr>
+                        <td>DSR Horas Extras</td>
+                        <td>14,32</td>
+                        <td>Desconto VT</td>
+                        <td>126,00</td>
+                    </tr>
+                    <tr>
+                        <td>Comissão</td>
+                        <td>1.490,00</td>
+                        <td>Desconto horas de atraso - 2 horas</td>
+                        <td>19,09</td>
+                    </tr>
+                    <tr>
+                        <td>DSR comissão</td>
+                        <td>372,50</td>
+                        <td>Desconto INSS</td>
+                        <td>388,02</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Desconto IRRF</td>
+                        <td>145,21</td>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total Bruto</th>
+                        <th>4.034,09</th>
+                        <th>Total de descontos</th>
+                        <th>1.548,32</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th></th>
+                        <th></th>
+                        <th>Total líquido</th>
+                        <th>2.485,77</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th colspan="2">Total dos Encargos</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total de INSS</th>
+                        <th>388,02</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total de IRRF</th>
+                        <th>145,21</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Total de FGTS</th>
+                        <th>321,20</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="pop-up pop-up-5" data-pop="5">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <p>Irmao do ceu faz as tabela 3</p>
+            </div>
+        </div>
+        <div class="pop-up pop-up-6" data-pop="6">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <p>Irmao do ceu faz as tabela 4</p>
+            </div>
+        </div>
+        <div class="pop-up pop-up-7" data-pop="7">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <p>Irmao do ceu faz as tabela 3</p>
+            </div>
+        </div>
+        <div class="pop-up pop-up-8" data-pop="8">
+            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
+            <div class="flex">
+                <p>Irmao do ceu faz as tabela 4</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
