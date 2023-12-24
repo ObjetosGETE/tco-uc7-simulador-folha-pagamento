@@ -150,7 +150,7 @@ $('.bt-pop-up').click(function () {
         }
     }
     if (count == btsArray.length) {
-        let btn = $(this).parents('.tela').children('.flex-vertical').children('.btn-continuar');
+        let btn = $(this).parents('.tela').find('.btn-continuar');
         btn.removeClass('inativo');
     }
 });
@@ -189,14 +189,28 @@ $('.btn-continuar').click(function () {
 })
 
 // exercicios da tabela
-$('.select-container select').change(function(){
-    let select = $(this);
-    select.removeClass('errado')
-    select.removeClass('correto')
-    console.log(select[0].value)
-    if(select[0].value=='correto'){
-        select.addClass('correto')
-    } else {
-        select.addClass('errado')
+// $('.select-container select').change(function(){
+//     let select = $(this);
+//     select.removeClass('errado')
+//     select.removeClass('correto')
+//     console.log(select[0].value)
+//     if(select[0].value=='correto'){
+//         select.addClass('correto')
+//     } else {
+//         select.addClass('errado')
+//     }
+// })
+
+$('.checar-tabelas').click(function () {
+    let exercicios = ($(this).parents('.pop-up').find('select'))
+    for (let i = 0; i < exercicios.length; i++) {
+        exercicios[i].classList.remove('errado')
+        exercicios[i].classList.remove('correto')
+        if(exercicios[i].value=='errado'){
+            exercicios[i].classList.add('errado')
+        }
+        if(exercicios[i].value=='correto'){
+            exercicios[i].classList.add('correto')
+        }
     }
 })

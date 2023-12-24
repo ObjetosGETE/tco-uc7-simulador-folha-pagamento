@@ -318,6 +318,10 @@ button {
   opacity: 0.7;
   pointer-events: none;
 }
+.ui-btn.checar-tabelas {
+  display: block;
+  margin: 20px auto;
+}
 
 .ui-dados-empresa {
   padding: 50px;
@@ -385,44 +389,6 @@ button {
   max-height: 480px;
 }
 
-@media (max-width: 1400px) {
-  p.index {
-    top: 0px;
-  }
-  .tela {
-    padding: 70px 40px 70px 160px;
-  }
-  .tela-1 {
-    padding: 1px;
-  }
-  .tela-1 .titulo {
-    transform: scale(0.8);
-    top: 100px;
-    right: 0;
-  }
-  .tela-1 .btn-iniciar {
-    right: 200px;
-    top: 360px;
-  }
-  .ui-msg-escura {
-    font-size: 22px;
-    line-height: 1.5rem;
-    margin: 20px auto;
-  }
-  .ui-msg-escura p {
-    margin-top: 0;
-  }
-  .avatar-1 {
-    height: 250px;
-  }
-  .ui-dados-empresa::after {
-    right: 0;
-    pointer-events: none;
-  }
-  .bottom-right {
-    z-index: 10;
-  }
-}
 .flex-vertical {
   display: flex;
   justify-content: center;
@@ -499,6 +465,44 @@ table select.correto {
 }
 table select.errado {
   background-color: rgb(201, 72, 72);
+}
+@media (max-width: 1400px) {
+  table p.index {
+    top: 0px;
+  }
+  table .tela {
+    padding: 70px 40px 70px 160px;
+  }
+  table .tela-1 {
+    padding: 1px;
+  }
+  table .tela-1 .titulo {
+    transform: scale(0.8);
+    top: 100px;
+    right: 0;
+  }
+  table .tela-1 .btn-iniciar {
+    right: 200px;
+    top: 360px;
+  }
+  table .ui-msg-escura {
+    font-size: 22px;
+    line-height: 1.5rem;
+    margin: 20px auto;
+  }
+  table .ui-msg-escura p {
+    margin-top: 0;
+  }
+  table .avatar-1 {
+    height: 250px;
+  }
+  table .ui-dados-empresa::after {
+    right: 0;
+    pointer-events: none;
+  }
+  table .bottom-right {
+    z-index: 10;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
