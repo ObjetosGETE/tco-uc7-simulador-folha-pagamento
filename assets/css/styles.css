@@ -435,8 +435,6 @@ table {
 }
 table td,
 table th {
-  border: 1px solid #cecece;
-  border-collapse: collapse;
   padding: 8px;
 }
 table td {
@@ -446,6 +444,7 @@ table td {
 table th {
   background-color: #3f4d68;
   color: white;
+  text-align: center;
 }
 table .select-container {
   padding: 0;

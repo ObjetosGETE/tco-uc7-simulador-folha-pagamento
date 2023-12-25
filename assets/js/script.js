@@ -202,15 +202,31 @@ $('.btn-continuar').click(function () {
 // })
 
 $('.checar-tabelas').click(function () {
+    let errados = 0;
+    let corretos = 0;
     let exercicios = ($(this).parents('.pop-up').find('select'))
     for (let i = 0; i < exercicios.length; i++) {
         exercicios[i].classList.remove('errado')
         exercicios[i].classList.remove('correto')
-        if(exercicios[i].value=='errado'){
-            exercicios[i].classList.add('errado')
+        if (exercicios[i].value == 'errado' || exercicios[i].value == '') {
+            exercicios[i].classList.add('errado');
+            errados++
         }
-        if(exercicios[i].value=='correto'){
-            exercicios[i].classList.add('correto')
+        if (exercicios[i].value == 'correto') {
+            exercicios[i].classList.add('correto');
+            corretos++
         }
     }
+    if (errados > 0) {
+        // $('#modal-feedback-errado').show()
+        $('#modal-feedback-errado').modal('show')
+    }
+    if (errados == 0 && corretos == exercicios.length) {
+        $('#modal-feedback-correto').modal('show')
+        
+    }
+})
+
+$('#modal-feedback-correto .close-modal').click(function () { 
+    $('.pop-up').fadeOut()
 })
