@@ -431,18 +431,18 @@ table {
   margin: 15px auto;
   width: 1400px;
   max-width: 100%;
-  border-spacing: 0;
 }
 table td,
 table th {
   padding: 8px;
 }
 table td {
-  border: 1px solid #cecece;
+  border: 2px solid #cecece;
   background-color: white;
 }
 table th {
   background-color: #3f4d68;
+  border: 2px solid #cecece;
   color: white;
   text-align: center;
 }
@@ -465,41 +465,42 @@ table select.correto {
 table select.errado {
   background-color: rgb(201, 72, 72);
 }
+
 @media (max-width: 1400px) {
-  table p.index {
+  p.index {
     top: 0px;
   }
-  table .tela {
+  .tela {
     padding: 70px 40px 70px 160px;
   }
-  table .tela-1 {
+  .tela-1 {
     padding: 1px;
   }
-  table .tela-1 .titulo {
+  .tela-1 .titulo {
     transform: scale(0.8);
     top: 100px;
     right: 0;
   }
-  table .tela-1 .btn-iniciar {
+  .tela-1 .btn-iniciar {
     right: 200px;
     top: 360px;
   }
-  table .ui-msg-escura {
+  .ui-msg-escura {
     font-size: 22px;
     line-height: 1.5rem;
     margin: 20px auto;
   }
-  table .ui-msg-escura p {
+  .ui-msg-escura p {
     margin-top: 0;
   }
-  table .avatar-1 {
+  .avatar-1 {
     height: 250px;
   }
-  table .ui-dados-empresa::after {
+  .ui-dados-empresa::after {
     right: 0;
     pointer-events: none;
   }
-  table .bottom-right {
+  .bottom-right {
     z-index: 10;
   }
 }

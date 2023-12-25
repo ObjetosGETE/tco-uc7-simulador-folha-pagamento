@@ -503,7 +503,6 @@
         margin: 15px auto;
         width: 1400px;
         max-width: 100%;
-        border-spacing: 0;
 
         td,
         th {
@@ -511,12 +510,13 @@
         }
 
         td {
-            border: 1px solid #cecece;
+            border: 2px solid #cecece;
             background-color: white;
         }
 
         th {
             background-color: #3f4d68;
+            border: 2px solid #cecece;
             color: white;
             text-align: center;
         }
@@ -543,52 +543,52 @@
                 background-color: rgb(201, 72, 72);
             }
         }
+    }
 
-        @media (max-width: 1400px) {
-            p.index {
-                top: 0px;
-            }
+    @media (max-width: 1400px) {
+        p.index {
+            top: 0px;
+        }
 
-            .tela {
-                padding: 70px 40px 70px 160px;
-            }
+        .tela {
+            padding: 70px 40px 70px 160px;
+        }
 
-            .tela-1 {
-                padding: 1px;
+        .tela-1 {
+            padding: 1px;
 
-                .titulo {
-                    transform: scale(.8);
-                    top: 100px;
-                    right: 0;
-                }
-
-                .btn-iniciar {
-                    right: 200px;
-                    top: 360px;
-                }
-            }
-
-            .ui-msg-escura {
-                font-size: 22px;
-                line-height: 1.5rem;
-                margin: 20px auto;
-
-                p {
-                    margin-top: 0;
-                }
-            }
-
-            .avatar-1 {
-                height: 250px;
-            }
-
-            .ui-dados-empresa::after {
+            .titulo {
+                transform: scale(.8);
+                top: 100px;
                 right: 0;
-                pointer-events: none;
             }
 
-            .bottom-right {
-                z-index: 10;
+            .btn-iniciar {
+                right: 200px;
+                top: 360px;
             }
+        }
+
+        .ui-msg-escura {
+            font-size: 22px;
+            line-height: 1.5rem;
+            margin: 20px auto;
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        .avatar-1 {
+            height: 250px;
+        }
+
+        .ui-dados-empresa::after {
+            right: 0;
+            pointer-events: none;
+        }
+
+        .bottom-right {
+            z-index: 10;
         }
     }
