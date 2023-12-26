@@ -168,14 +168,14 @@
                 <button class="bt-resumo-folha bt-pop-up" data-pop="7"></button>
                 <button class="bt-comprovantes bt-pop-up" data-pop="8"></button>
             </div>
-            <p class="index">PASSO 4 - Dados da Folha de Pagamento</p>
+            <p class="index">PASSO 4 - Resumo da Folha de Pagamento</p>
             <div class="flex-vertical">
                 <div class="ui-msg-escura">
                     <div class="text">
                         <p>Aqui você visualizará o resumo da folha; assim, poderá realizar o cálculo do <b>INSS
                                 PATRONAL</b>.</p>
                         <p>Como a empresa é optante pelo Simples Nacional, enquadrada no Anexo IV, você terá de calcular
-                            o <b>INSS PATRONAL</b>. Vco6E deverá realizar o cálculo e selecionar o valor correto.</p>
+                            o <b>INSS PATRONAL</b>. Você deverá realizar o cálculo e selecionar o valor correto.</p>
                         <p>Após ter recebido o <em>feedback</em> positivo na fórmula, você poderá emitir as guias e os
                             recibos, basta clicar nos nomes correspondentes.</p>
                     </div>
@@ -1286,16 +1286,18 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Correto!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
                 <div class="modal-body">
                     <img src="assets/img/img_feed_pos.png" alt="">
-                    <p>Você demonstrou um entendimento sólido dos conceitos e procedimentos envolvidos no cálculo
-                        correto da folha de pagamento.</p>
-                    <p>Parabéns!</p>
+                    <div class="text">
+                        <p>Você demonstrou um entendimento sólido dos conceitos e procedimentos envolvidos no cálculo
+                            correto da folha de pagamento.</p>
+                        <p>Parabéns!</p>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary close-modal"
+                    <button type="button" class="close-modal ui-btn"
                         data-bs-dismiss="modal">Continuar</button>
                 </div>
             </div>
@@ -1307,16 +1309,18 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Hmm...</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
                 <div class="modal-body">
                     <img src="assets/img/img_feed_neg.png" alt="">
-                    <p>Você ainda não conseguiu calcular corretamente os valores da folha de pagamento, mas não
-                        desanime!</p>
-                    <p>Tente novamente!</p>
+                    <div class="text">
+                        <p>Você ainda não conseguiu calcular corretamente os valores da folha de pagamento, mas não
+                            desanime!</p>
+                        <p>Tente novamente!</p>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    <button type="button" class="ui-btn" data-bs-dismiss="modal">Voltar</button>
                 </div>
             </div>
         </div>
