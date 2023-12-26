@@ -117,7 +117,7 @@
                 <button class="bt-tabela-formulas bt-pop-up" data-pop="3"></button>
                 <button class="bt-tabela-calculo-folha bt-pop-up" data-pop="4"></button>
             </div>
-            <p class="index">PASSO 2 - Dados da Folha de Pagamento</p>
+            <p class="index">PASSO 2 - Cálculo da Folha dos Colaboradores</p>
             <div class="flex-vertical">
                 <div class="ui-msg-escura">
                     <div class="text">
@@ -998,10 +998,10 @@
                     <td class="select-container">
                         <select name="formula-19" id="formula-19">
                             <option value=""> </option>
-                            <option value="errado">R$ ?</option>
+                            <option value="errado">R$ 325,00</option>
+                            <option value="errado">R$ 350,00</option>
                             <option value="correto">R$ 385,00</option>
-                            <option value="errado">R$ ?</option>
-                            <option value="errado">R$ ?</option>
+                            <option value="errado">R$ 390,00</option>
                         </select>
                     </td>
                 </tr>
@@ -1045,10 +1045,10 @@
                     <td class="select-container">
                         <select name="formula-19" id="formula-19">
                             <option value=""> </option>
-                            <option value="errado">R$ ?</option>
-                            <option value="correto">R$ 385,00</option>
-                            <option value="errado">R$ ?</option>
-                            <option value="errado">R$ ?</option>
+                            <option value="correto">R$ 68,41</option>
+                            <option value="errado">R$ 82,40</option>
+                            <option value="errado">R$ 109,81</option>
+                            <option value="errado">R$ 125,00</option>
                         </select>
                     </td>
                 </tr>
@@ -1079,10 +1079,10 @@
                     <td class="select-container">
                         <select name="formula-19" id="formula-19">
                             <option value=""> </option>
-                            <option value="errado">R$ ?</option>
+                            <option value="errado">R$ 325,00</option>
+                            <option value="errado">R$ 350,00</option>
                             <option value="correto">R$ 385,00</option>
-                            <option value="errado">R$ ?</option>
-                            <option value="errado">R$ ?</option>
+                            <option value="errado">R$ 390,00</option>
                         </select>
                     </td>
                 </tr>
@@ -1126,10 +1126,10 @@
                     <td class="select-container">
                         <select name="formula-19" id="formula-19">
                             <option value=""> </option>
-                            <option value="errado">R$ ?</option>
+                            <option value="errado">R$ 32,80</option>
                             <option value="correto">R$ 46,79</option>
-                            <option value="errado">R$ ?</option>
-                            <option value="errado">R$ ?</option>
+                            <option value="errado">R$ 57,44</option>
+                            <option value="errado">R$ 64,52</option>
                         </select>
                     </td>
                 </tr>
@@ -1269,15 +1269,126 @@
         </div>
         <div class="pop-up pop-up-7" data-pop="7">
             <button class="bt-fechar-pop-up ui-btn">Voltar</button>
-            <div class="flex">
-                <p>Irmao do ceu faz as tabela 3</p>
-            </div>
-        </div>
-        <div class="pop-up pop-up-8" data-pop="8">
-            <button class="bt-fechar-pop-up ui-btn">Voltar</button>
-            <div class="flex">
-                <p>Irmao do ceu faz as tabela 4</p>
-            </div>
+            <table>
+                <tr>
+                    <th tr colspan="2">Resumo da folha de pagamento</th>
+                </tr>
+                <tr class="sub-header">
+                    <th>Total de descontos</th>
+                    <th>2.988,19</th>
+                </tr>
+                <tr>
+                    <td>Salário-base</td>
+                    <td>3.990,00</td>
+                </tr>
+                <tr>
+                    <td>Horas extras</td>
+                    <td>95,93</td>
+                </tr>
+                <tr>
+                    <td>DSR Horas extras</td>
+                    <td>23,98</td>
+                </tr>
+                <tr>
+                    <td>Comissão</td>
+                    <td>2.775,00</td>
+                </tr>
+                <tr>
+                    <td>DSR Comissão</td>
+                    <td>693,75</td>
+                </tr>
+                <tr>
+                    <td>Pró-labore</td>
+                    <td>7.000,00</td>
+                </tr>
+                <tr class="sub-header">
+                    <th>Total de descontos</th>
+                    <th>2.988,19</th>
+                </tr>
+                <tr>
+                    <td>Desconto adiantamento</td>
+                    <td>1.530,00</td>
+                </tr>
+                <tr>
+                    <td>Desconto Vale-alimentação</td>
+                    <td>120,00</td>
+                </tr>
+                <tr>
+                    <td>Desconto VT</td>
+                    <td>239,40</td>
+                </tr>
+                <tr>
+                    <td>Desconto horas de atraso</td>
+                    <td>44,86</td>
+                </tr>
+                <tr>
+                    <td>Desconto INSS</td>
+                    <td>713,34</td>
+                </tr>
+                <tr>
+                    <td>Desconto IRRF</td>
+                    <td>340,59</td>
+                </tr>
+                <tr>
+                    <td>Desconto INSS (11%)</td>
+                    <td>770,00</td>
+                </tr>
+                <tr class="sub-header">
+                    <td>Total líquido</td>
+                    <td>10.820,47</td>
+                </tr>
+                <tr>
+                    <td>Total líquido</td>
+                    <td>4.705,67</td>
+                </tr>
+                <tr>
+                    <td>Total líquido</td>
+                    <td>6.114,80</td>
+                </tr>
+                <tr class="sub-header">
+                    <th colspan="2">Total INSS patronal</th>
+                </tr>
+                <tr>
+                    <td>Base INSS patronal</td>
+                    <td>14.533,80</td>
+                </tr>
+                <tr>
+                    <td>20% sobre a folha de pagamento</td>
+                    <td class="select-container">
+                        <select name="formula-20" id="formula-20">
+                            <option value=""> </option>
+                            <option value="errado">R$ 1.548,32</option>
+                            <option value="correto">R$ 2.906,76</option>
+                            <option value="errado">R$ 3.193,49</option>
+                            <option value="errado">R$ 3.518,80</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="sub-header">
+                    <th>Total encargos</th>
+                    <th>5.333,39</th>
+                </tr>
+                <tr>
+                    <td>Total de INSS segurados</td>
+                    <td>713,34</td>
+                </tr>
+                <tr>
+                    <td>Total de INSS 11% contr. sócio</td>
+                    <td>770,00</td>
+                </tr>
+                <tr>
+                    <td>Total de INSS patronal</td>
+                    <td>2.906,76</td>
+                </tr>
+                <tr>
+                    <td>Total de IRRF</td>
+                    <td>340,59</td>
+                </tr>
+                <tr>
+                    <td>Total de FGTS</td>
+                    <td>602,70</td>
+                </tr>
+            </table>
         </div>
     </div>
     <div class="modal fade" id="modal-feedback-correto" tabindex="-1" aria-labelledby="modal-feedback-positivo"
