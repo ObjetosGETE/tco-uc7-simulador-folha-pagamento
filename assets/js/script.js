@@ -227,6 +227,11 @@ $('.checar-tabelas').click(function () {
     }
 })
 
+$('select').click(function(){
+    $(this).removeClass('correto')
+    $(this).removeClass('errado')
+})
+
 $('#modal-feedback-correto .close-modal').click(function () { 
     $('.pop-up').fadeOut()
 })

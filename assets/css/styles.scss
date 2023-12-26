@@ -580,7 +580,16 @@
             padding: 8px 42px;
         }
     }
+    .comprovantes-bts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
+        .ui-btn {
+            width: 380px;
+        }
+    }
     @media (max-width: 1400px) {
         p.index {
             top: 0px;
