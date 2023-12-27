@@ -45,6 +45,7 @@ $(document).ready(function () {
     })
 
 });
+const audio = new Audio();
 $('.pop-up').hide();
 $('.comprovantes-bts').hide();
 $('.tela:not(.tela-1)').hide();
@@ -144,7 +145,7 @@ $('.bt-pop-up').click(function () {
     $(`.pop-up[data-pop=${data}]`).fadeIn();
     $(`.pop-up[data-pop=${data}]`).scrollTop = 0;
     let btsArray = $(this).parents('.tela').find('.bt-pop-up');
-    
+
     for (let i = 0; i < btsArray.length; i++) {
         if (btsArray[i].classList.contains('clicado')) {
             count++
@@ -209,9 +210,15 @@ $('.checar-tabelas').click(function () {
     if (errados > 0) {
         // $('#modal-feedback-errado').show()
         $('#modal-feedback-errado').modal('show');
+        audio.setAttribute('src', 'assets/audio/erro.mp3');
+        audio.load();
+        audio.play();
     }
     if (errados == 0 && corretos == exercicios.length) {
         $('#modal-feedback-correto').modal('show');
+        audio.setAttribute('src', 'assets/audio/acerto.mp3');
+        audio.load();
+        audio.play();
     }
 })
 
@@ -224,7 +231,7 @@ $('#modal-feedback-correto .close-modal').click(function () {
     $('.pop-up').fadeOut();
 })
 
-$('.bt-resumo-folha').click(function () { 
+$('.bt-resumo-folha').click(function () {
     setTimeout(() => {
         $(this).parents('.tela').find('.ui-msg-escura').hide();
         $('.comprovantes-bts').show();
