@@ -17,9 +17,14 @@
         font-size: 38px;
         margin-bottom: 20px;
     }
+    h4 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
     p {
         line-height: 30px;
     }
+
     .wrapper {
         width: 1920px;
         height: 1080px;
@@ -544,7 +549,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50px;
+            height: 52px;
+            border: 0;
         }
 
         select {
@@ -552,13 +558,15 @@
             height: 100%;
             cursor: pointer;
             font-size: 18px;
+            border-radius: 0;
+            
 
             &.correto {
                 background: rgb(128, 202, 92);
             }
 
             &.errado {
-                background-color: rgb(202, 92, 128);
+                background-color: rgb(220, 80, 80);
             }
         }
     }
@@ -619,12 +627,54 @@
         }
     }
 
+    /**/
+    /** vire o celular **/
+    /**/
 
+    .modo-smart {
+        display: none;
+        position: absolute;
+    }
+
+    .p-paisagem {
+        color: white;
+        text-align: center;
+    }
+
+    .img-paisagem {
+        max-width: 70% !important;
+        height: auto;
+        display: block;
+    }
+
+    @media only screen and (orientation: portrait) {
+        .modo-smart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #7c88e7;
+            z-index: 999;
+        }
+    }
+    .preloaded-images {
+        display: none;
+        position: absolute;
+    }
     @media (max-width: 1400px) {
         p.index {
-            top: 0px;
+            top: 30px;
         }
-
+        p {
+            font-size: 20px;
+        }
         .tela {
             padding: 70px 40px 70px 160px;
         }
@@ -665,5 +715,11 @@
 
         .bottom-right {
             z-index: 10;
+        }
+        th {
+            font-size: 18px;
+        }
+        td {
+            font-size: 20px;
         }
     }
