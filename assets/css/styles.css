@@ -9,10 +9,18 @@ body {
   background-color: #3f4d68;
 }
 
+h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 30px;
+}
+
 .wrapper {
   width: 1920px;
   height: 1080px;
-  font-size: 22px;
   overflow-x: hidden;
   position: absolute;
   top: calc(50% - 540px);
@@ -90,6 +98,7 @@ p.index {
   position: relative;
   padding: 20px 40px;
   color: #597994;
+  font-size: 24px;
 }
 .ui-msg h3 {
   margin: 0;
@@ -101,7 +110,8 @@ p.index {
   right: 25px;
 }
 
-.tela-2 .ui-msg, .tela-final .ui-msg {
+.tela-2 .ui-msg,
+.tela-final .ui-msg {
   width: 800px;
   height: 600px;
   padding: 40px;
@@ -115,9 +125,9 @@ p.index {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  font-size: 22px;
+  font-size: 24px;
   margin: 50px auto;
-  padding: 15px 30px;
+  padding: 20px 40px;
 }
 
 .menu-esq {
@@ -372,7 +382,7 @@ button {
 }
 .ui-dados-empresa .ui-msg p {
   margin-left: 15px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .bottom-right {
@@ -469,7 +479,7 @@ table select {
   font-size: 18px;
 }
 table select.correto {
-  background-color: rgb(72, 201, 72);
+  background: rgb(128, 202, 92);
 }
 table select.errado {
   background-color: rgb(201, 72, 72);
@@ -546,7 +556,7 @@ table select.errado {
     top: 360px;
   }
   .ui-msg-escura {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.5rem;
     margin: 20px auto;
   }

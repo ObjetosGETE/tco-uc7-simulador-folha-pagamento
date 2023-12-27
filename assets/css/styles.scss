@@ -13,10 +13,16 @@
         background-color: #3f4d68;
     }
 
+    h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    p {
+        line-height: 30px;
+    }
     .wrapper {
         width: 1920px;
         height: 1080px;
-        font-size: 22px;
         overflow-x: hidden;
         position: absolute;
         top: calc(50% - (1080px / 2));
@@ -101,6 +107,7 @@
         position: relative;
         padding: 20px 40px;
         color: #597994;
+        font-size: 24px;
 
         h3 {
             margin: 0;
@@ -114,7 +121,8 @@
         }
     }
 
-    .tela-2 .ui-msg, .tela-final .ui-msg {
+    .tela-2 .ui-msg,
+    .tela-final .ui-msg {
         width: 800px;
         height: 600px;
         padding: 40px;
@@ -128,9 +136,9 @@
         justify-content: center;
         align-items: center;
         border-radius: 25px;
-        font-size: 22px;
+        font-size: 24px;
         margin: 50px auto;
-        padding: 15px 30px;
+        padding: 20px 40px;
 
     }
 
@@ -351,10 +359,12 @@
             width: 60%;
         }
     }
+
     .tela.quarto-passo {
         align-items: end;
         padding-right: 200px;
     }
+
     button {
         cursor: pointer;
     }
@@ -436,7 +446,7 @@
 
         .ui-msg p {
             margin-left: 15px;
-            font-size: 22px;
+            font-size: 24px;
         }
     }
 
@@ -544,7 +554,7 @@
             font-size: 18px;
 
             &.correto {
-                background-color: rgb(72, 201, 72);
+                background: rgb(128, 202, 92);
             }
 
             &.errado {
@@ -578,6 +588,7 @@
         }
 
     }
+
     .modal-footer {
         justify-content: center;
         background-color: #e5eeff;
@@ -588,6 +599,7 @@
             padding: 8px 42px;
         }
     }
+
     .comprovantes-bts {
         display: flex;
         justify-content: center;
@@ -607,7 +619,7 @@
         }
     }
 
-    
+
     @media (max-width: 1400px) {
         p.index {
             top: 0px;
@@ -633,7 +645,7 @@
         }
 
         .ui-msg-escura {
-            font-size: 22px;
+            font-size: 24px;
             line-height: 1.5rem;
             margin: 20px auto;
 
