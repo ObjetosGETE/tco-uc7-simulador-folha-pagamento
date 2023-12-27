@@ -114,7 +114,7 @@
         }
     }
 
-    .tela-2 .ui-msg {
+    .tela-2 .ui-msg, .tela-final .ui-msg {
         width: 800px;
         height: 600px;
         padding: 40px;
@@ -308,6 +308,7 @@
 
         .bt-comprovantes {
             background-image: url('../img/bts/bt_4p_02.png');
+            pointer-events: none;
 
             &:hover {
                 background-image: url('../img/bts/bt_4p_02_hv.png');
@@ -350,7 +351,10 @@
             width: 60%;
         }
     }
-
+    .tela.quarto-passo {
+        align-items: end;
+        padding-right: 200px;
+    }
     button {
         cursor: pointer;
     }
@@ -360,10 +364,10 @@
         box-shadow: 7px 7px $dark-blue;
         font-size: 24px;
         padding: 15px 40px;
-        border-radius: 10px;
+        border-radius: 14px;
         color: white;
         text-transform: uppercase;
-        border: 2px solid $dark-blue;
+        border: 3px solid $dark-blue;
         margin: 15px;
         font-weight: 700;
         width: fit-content;
@@ -381,6 +385,10 @@
         &.checar-tabelas {
             display: block;
             margin: 20px auto;
+        }
+
+        &.clicado {
+            background: linear-gradient(180deg, rgb(128, 202, 92) 0%, rgb(82, 155, 37) 100%);
         }
     }
 
@@ -585,11 +593,21 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: #e8eff5;
+        margin-right: 0;
+        margin-left: auto;
+        margin-bottom: 20px;
+        padding: 60px;
+        border-radius: 20px;
+        border: 1px solid #597994;
+        box-shadow: 4px 4px 20px #597994;
 
         .ui-btn {
             width: 380px;
         }
     }
+
+    
     @media (max-width: 1400px) {
         p.index {
             top: 0px;

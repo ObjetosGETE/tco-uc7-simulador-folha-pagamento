@@ -46,6 +46,7 @@ $(document).ready(function () {
 
 });
 $('.pop-up').hide();
+$('.comprovantes-bts').hide();
 $('.tela:not(.tela-1)').hide();
 
 // navegacao
@@ -138,12 +139,12 @@ $('.bt-4-passo').click(function () {
 // pop-ups
 $('.bt-pop-up').click(function () {
     let count = 0;
-    $(this).addClass('clicado')
-    let data = $(this).data('pop')
-    $(`.pop-up[data-pop=${data}]`).fadeIn()
+    $(this).addClass('clicado');
+    let data = $(this).data('pop');
+    $(`.pop-up[data-pop=${data}]`).fadeIn();
     $(`.pop-up[data-pop=${data}]`).scrollTop = 0;
-
-    let btsArray = $(this).parents('.menu-esq').children('button');
+    let btsArray = $(this).parents('.tela').find('.bt-pop-up');
+    
     for (let i = 0; i < btsArray.length; i++) {
         if (btsArray[i].classList.contains('clicado')) {
             count++
@@ -163,23 +164,23 @@ $('.btn-continuar').click(function () {
     telaAtual = $(this).parents('.tela');
     let telaAnterior;
     if ($(this).hasClass('continuar-1')) {
-        telaAnterior = $('.tela-4')
+        telaAnterior = $('.tela-4');
         telaAnterior.children('.menu-esq').children('.bt-1-passo').addClass('clicado');
         telaAnterior.children('.menu-esq').children('.bt-2-passo').removeClass('inativo');
     }
     if ($(this).hasClass('continuar-2')) {
-        telaAnterior = $('.tela-4')
+        telaAnterior = $('.tela-4');
         telaAnterior.children('.menu-esq').children('.bt-2-passo').addClass('clicado');
         telaAnterior.children('.menu-esq').children('.bt-3-passo').removeClass('inativo');
     }
     if ($(this).hasClass('continuar-3')) {
-        telaAnterior = $('.tela-4')
+        telaAnterior = $('.tela-4');
         telaAnterior.children('.menu-esq').children('.bt-3-passo').addClass('clicado');
         telaAnterior.children('.menu-esq').children('.bt-4-passo').removeClass('inativo');
     }
     if ($(this).hasClass('continuar-4')) {
-        telaAnterior = $('.tela-4')
-        telaAnterior.children('.menu-esq').children('.bt-4-passo').addClass('clicado');
+        telaAnterior = $('.tela-final')
+        // telaAnterior.children('.menu-esq').children('.bt-4-passo').addClass('clicado');
 
     }
     telaAtual.fadeOut()
@@ -189,49 +190,43 @@ $('.btn-continuar').click(function () {
 })
 
 // exercicios da tabela
-// $('.select-container select').change(function(){
-//     let select = $(this);
-//     select.removeClass('errado')
-//     select.removeClass('correto')
-//     console.log(select[0].value)
-//     if(select[0].value=='correto'){
-//         select.addClass('correto')
-//     } else {
-//         select.addClass('errado')
-//     }
-// })
-
 $('.checar-tabelas').click(function () {
     let errados = 0;
     let corretos = 0;
-    let exercicios = ($(this).parents('.pop-up').find('select'))
+    let exercicios = ($(this).parents('.pop-up').find('select'));
     for (let i = 0; i < exercicios.length; i++) {
-        exercicios[i].classList.remove('errado')
-        exercicios[i].classList.remove('correto')
+        exercicios[i].classList.remove('errado');
+        exercicios[i].classList.remove('correto');
         if (exercicios[i].value == 'errado' || exercicios[i].value == '') {
             exercicios[i].classList.add('errado');
-            errados++
+            errados++;
         }
         if (exercicios[i].value == 'correto') {
             exercicios[i].classList.add('correto');
-            corretos++
+            corretos++;
         }
     }
     if (errados > 0) {
         // $('#modal-feedback-errado').show()
-        $('#modal-feedback-errado').modal('show')
+        $('#modal-feedback-errado').modal('show');
     }
     if (errados == 0 && corretos == exercicios.length) {
-        $('#modal-feedback-correto').modal('show')
-        
+        $('#modal-feedback-correto').modal('show');
     }
 })
 
-$('select').click(function(){
-    $(this).removeClass('correto')
-    $(this).removeClass('errado')
+$('select').click(function () {
+    $(this).removeClass('correto');
+    $(this).removeClass('errado');
 })
 
-$('#modal-feedback-correto .close-modal').click(function () { 
-    $('.pop-up').fadeOut()
+$('#modal-feedback-correto .close-modal').click(function () {
+    $('.pop-up').fadeOut();
+})
+
+$('.bt-resumo-folha').click(function () { 
+    setTimeout(() => {
+        $(this).parents('.tela').find('.ui-msg-escura').hide();
+        $('.comprovantes-bts').show();
+    }, 1500);
 })

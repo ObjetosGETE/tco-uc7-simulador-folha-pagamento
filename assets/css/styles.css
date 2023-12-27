@@ -101,7 +101,7 @@ p.index {
   right: 25px;
 }
 
-.tela-2 .ui-msg {
+.tela-2 .ui-msg, .tela-final .ui-msg {
   width: 800px;
   height: 600px;
   padding: 40px;
@@ -250,6 +250,7 @@ p.index {
 }
 .menu-esq.ativo .bt-comprovantes {
   background-image: url("../img/bts/bt_4p_02.png");
+  pointer-events: none;
 }
 .menu-esq.ativo .bt-comprovantes:hover {
   background-image: url("../img/bts/bt_4p_02_hv.png");
@@ -293,6 +294,11 @@ p.index {
   width: 60%;
 }
 
+.tela.quarto-passo {
+  align-items: end;
+  padding-right: 200px;
+}
+
 button {
   cursor: pointer;
 }
@@ -302,10 +308,10 @@ button {
   box-shadow: 7px 7px #20304f;
   font-size: 24px;
   padding: 15px 40px;
-  border-radius: 10px;
+  border-radius: 14px;
   color: white;
   text-transform: uppercase;
-  border: 2px solid #20304f;
+  border: 3px solid #20304f;
   margin: 15px;
   font-weight: 700;
   width: fit-content;
@@ -321,6 +327,9 @@ button {
 .ui-btn.checar-tabelas {
   display: block;
   margin: 20px auto;
+}
+.ui-btn.clicado {
+  background: linear-gradient(180deg, rgb(128, 202, 92) 0%, rgb(82, 155, 37) 100%);
 }
 
 .ui-dados-empresa {
@@ -504,6 +513,14 @@ table select.errado {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #e8eff5;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid #597994;
+  box-shadow: 4px 4px 20px #597994;
 }
 .comprovantes-bts .ui-btn {
   width: 380px;
