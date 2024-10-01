@@ -156,9 +156,14 @@ $('.bt-pop-up').click(function () {
         btn.removeClass('inativo');
     }
 });
-
+var primeiraetapa_ = function (){
+    if($(".bt-tabela-contribuicao.bt-pop-up").hasClass("clicado") && $(".bt-tabela-dados.bt-pop-up").hasClass("clicado")){
+        $(".avisoContinuar").show();
+    }
+}
 $('.bt-fechar-pop-up').click(function () {
     $(this).parents('.pop-up').fadeOut();
+    primeiraetapa_();
 });
 
 $('.btn-continuar').click(function () {

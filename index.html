@@ -56,8 +56,8 @@
                 <p>Hoje, sua tarefa será calcular a folha de pagamento do cliente Osvaldo e Luzia Serviços de Limpeza e
                     Conservação Ltda, calcular os encargos e impostos e gerar as respectivas guias/DARFs.</p>
                 <p>Vamos lá?</p>
-                <p>Clique no botão <b>INICIAR</b> e acesse a (aba) <b>TELA INICIAL</b>, onde você encontrará o passo a
-                    passo.</p>
+                <!-- <p>Clique no botão <b>INICIAR</b> e acesse a (aba) <b>TELA INICIAL</b>, onde você encontrará o passo a
+                    passo.</p> -->
                 <button class="btn-proximo ui-btn">Avançar</button>
             </div>
         </div>
@@ -68,12 +68,12 @@
                 <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
                 <img class="bt-blip" src="assets/img/bts/bt_lateral_mini.png" alt="">
             </div>
-            <p class="index">Passo-a-passo para calcular a Folha de Pagamento</p>
+            <p class="index legenda_correcao">Passo-a-passo para calcular a Folha de Pagamento</p>
             <div class="ui-msg-escura">
                 <img src="assets/img/img_instru_01.png" class="avatar-1" />
                 <div class="text">
                     <p>Aqui você encontrará os dados do cliente para realizar o cálculo da Folha de Pagamento.</p>
-                    <p>Este cliente tem dois colaboradores e dois prolabores. É uma empresa optante pelo Simples
+                    <p>Este cliente tem dois colaboradores e dois pró-labores. É uma empresa optante pelo Simples
                         Nacional - Faturamento pelo Anexo IV, e por isso terá <b>INSS PATRONAL</b>.</p>
                     <p>Fique atento!</p>
                 </div>
@@ -98,13 +98,13 @@
                 <button class="bt-3-passo inativo"></button>
                 <button class="bt-4-passo inativo"></button>
             </div>
-            <p class="index">Passo-a-passo para calcular a Folha de Pagamento</p>
+            <p class="index legenda_correcao">Passo-a-passo para calcular a Folha de Pagamento</p>
             <div class="ui-msg-escura">
                 <div class="text">
                     <p>No primeiro dia útil do mês corrente, o cliente Osvaldo e Luzia Serviços de Limpeza e Conservação
                         Ltda enviou um e-mail com as informações para calcular a folha de pagamento do mês anterior.</p>
-                    <p>Para cálculo da folha de pagamento e emissão das DARFs e Guias, você irá seguir os seguintes
-                        passos:</p>
+                    <p>Para cálculo da folha de pagamento e emissão das DARFs e GUIAS, você terá que seguir o passo a
+                        passo:</p>
                 </div>
                 <img src="assets/img/img_instru_02.png" alt="" class="avatar-2">
             </div>
@@ -118,8 +118,15 @@
             </div>
             <div class="ui-msg">
                 <h2>Encerramento</h2>
-                <p>Nesta simulação, você teve a oportunidade de vivenciar o cálculo de uma folha de pagamento, realizando todos os procedimentos que esse processo envolve. </p>
-                <p>Foi uma oportunidade de ver na prática um pouco das rotinas trabalhistas, passando pelo cálculo dos proventos e descontos de um colaborador e pelo cálculo do pró-labore dos sócios. Também foi possível vivenciar a emissão de guias, DARFs e recibos pertinentes à folha de pagamento.</p>
+                <p>Nesta simulação, você vivenciou e realizou o cálculo de uma folha de pagamento, possibilitando a
+                    ampliação de seus conhecimentos.</p>
+                <p>
+                    Foi uma oportunidade de ver na prática um pouco das rotinas trabalhistas, passando pelo cálculo dos
+                    proventos e descontos de pagamentos de colaboradores e sócios, inclusive, a geração das guias dos
+                    encargos sociais e dos recibos de pagamentos.
+                    Seguimos com os estudos, até a próxima!
+                </p>
+
             </div>
         </div>
         <div class="tela primeiro-passo">
@@ -129,21 +136,25 @@
                 <button class="bt-tabela-contribuicao bt-pop-up" data-pop="1"></button>
                 <button class="bt-tabela-dados bt-pop-up" data-pop="2"></button>
             </div>
-            <p class="index">PASSO 1 - Dados da Folha de Pagamento</p>
+            <p class="index legenda_correcao">PASSO 1 - Dados da Folha de Pagamento</p>
             <div class="flex-vertical">
                 <div class="ui-msg-escura">
                     <div class="text">
-                        <p>Nesta tela, são apresentados o resumo dos dados da folha (recebido por e-mail do cliente) e
+                        <!-- <p>Nesta tela, são apresentados o resumo dos dados da folha (recebido por e-mail do cliente) e
                             as tabelas de INSS e IR, também terá a informação de como foi calculado os dias úteis de
                             descanso para base do DSR (Descanso Semanal Remunerado), este último usaremos para DSR das
-                            horas extras e comissão.</p>
+                            horas extras e comissão.</p> -->
+                        <p>Aqui você encontrará as informações necessárias para cálculo da folha:
+                        </p>
+
+                        <ul>
+                            <li>Tabelas atualizada do INSS, IRRF e Cálculo do DSR (Descanso Semanal Remunerado);</li>
+                            <li>Resumo das informações para o cálculo da folha;</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="ui-msg">
-                    <h3>Cálculo DSR</h3>
-                    <p>DSR: Mês de referência: Setembro de 2023 (tem 30 dias, sendo que 24 dias úteis, 2 feriados no Rio
-                        Grande do Sul e 4 domingos).<br>
-                        Base para o DSR é 24 dias úteis e 6 dias de descanso remunerado.</p>
+                <div class="alert alert-primary avisoContinuar" style="display: none;">
+                    <P class="text-center">Vamos para o segundo passo? Clique ou toque em continuar.</P>
                 </div>
                 <button class="ui-btn btn-continuar continuar-1 inativo">Continuar</button>
             </div>
@@ -155,15 +166,21 @@
                 <button class="bt-tabela-formulas bt-pop-up" data-pop="3"></button>
                 <button class="bt-tabela-calculo-folha bt-pop-up" data-pop="4"></button>
             </div>
-            <p class="index">PASSO 2 - Cálculo da Folha dos Colaboradores</p>
+            <p class="index legenda_correcao">PASSO 2 - Cálculo da Folha dos Colaboradores</p>
             <div class="flex-vertical">
                 <div class="ui-msg-escura">
                     <div class="text">
-                        <p>Aqui você realizará os cálculos da folha das colaboradoras Solange e Mariana. Para isso, você
-                            deverá calcular os proventos e descontos, conforme as fórmulas apresentadas. No final de
-                            cada fórmula, você encontrará uma lista de valores, então selecione o valor conforme o
-                            resultado do cálculo apresentado. Para isso, clique e selecione a resposta correta
-                            (verificar o resumo - máximo de três linhas).</p>
+                        <p>Chegou a hora de você calcular a folha das colaboradoras, Solange e Mariana. Para isto, você
+                            deve realizar os cálculos dos proventos e descontos, aplicando as fórmulas apresentadas.
+                            Após confirme o resultado do cálculo encontrado, selecionando a resposta correta na lista de
+                            valores informados ao final de cada fórmula.</p>
+
+                        <p>Após ter recebido o feedback positivo, clique em RESUMO DO CÁLCULO DA FOLHA DE PAGAMENTO,
+                            onde você poderá conferir o resultado.</p>
+
+                        <p>Agora que você já calculou a folha dos colaboradores, CLIQUE EM CONTINUAR para o cálculo da
+                            folha dos sócios.</p>
+
                     </div>
                 </div>
                 <button class="ui-btn btn-continuar continuar-2 inativo">Continuar</button>
@@ -176,26 +193,30 @@
                 <button class="bt-tabela-formulas bt-pop-up" data-pop="5"></button>
                 <button class="bt-tabela-calculo-folha bt-pop-up" data-pop="6"></button>
             </div>
-            <p class="index">PASSO 3 - Dados da Folha de Pagamento</p>
+            <p class="index legenda_correcao">PASSO 3 - Dados da Folha de Pagamento</p>
             <div class="flex-vertical">
                 <div class="ui-msg-escura">
                     <div class="text">
-                        <p>Aqui você realizará os cálculos da folha dos sócios Michele e Rodrigo.</p>
-                        <p>Para isso, deverá realizar os cálculos dos proventos e descontos, conforme as fórmulas
-                            apresentadas. No final de cada fórmula, você encontrará uma lista de valores, então
-                            selecione o valor conforme o resultado do cálculo apresentado.</p>
-                        <p>Após ter recebido o feedback positivo em todas as fórmulas, você irá para o próximo passo,
-                            RESUMO DA FOLHA DE PAGAMENTO, no qual poderá conferir o resultado do seu trabalho e
-                            concluí-lo emitindo as guias e os recibos.</p>
-                        <p><b>Acesse ao lado</b> a lista de fórmulas e selecione o valor correto do resultado.</p>
+                        <p>Chegou a hora de você calcular a folha dos sócios, Michele e Rodrigo. Para isto, você deve
+                            realizar os cálculos dos proventos e descontos, aplicando as fórmulas apresentadas. Após
+                            confirme o resultado do cálculo encontrado, selecionando a resposta correta na lista de
+                            valores informados ao final de cada fórmula.</p>
+
+                        <p>Após ter recebido o feedback positivo, clique em RESUMO DO CÁLCULO DA FOLHA DE PAGAMENTO,
+                            onde você poderá conferir o resultado.</p>
+
+                        <p>Agora que você já calculou as folhas de pagamento dos colaboradores e sócios, CLIQUE EM
+                            CONTINUAR para o cálculo do INSS PATRONAL.</p>
+
                     </div>
                 </div>
-                <div class="ui-msg">
+                <!-- <div class="ui-msg">
                     <h3>Cálculo DSR</h3>
                     <p>DSR: Mês de referência: Setembro de 2023 (tem 30 dias, sendo que 24 dias úteis, 2 feriados no Rio
                         Grande do Sul e 4 domingos).<br>
                         Base para o DSR é 24 dias úteis e 6 dias de descanso remunerado.</p>
-                </div>
+                        
+                </div> -->
                 <button class="ui-btn btn-continuar continuar-3 inativo">Continuar</button>
             </div>
         </div>
@@ -206,16 +227,19 @@
                 <button class="bt-resumo-folha bt-pop-up" data-pop="7"></button>
                 <button class="bt-comprovantes"></button>
             </div>
-            <p class="index">PASSO 4 - Resumo da Folha de Pagamento</p>
+            <p class="index legenda_correcao">PASSO 4 - Resumo da Folha de Pagamento</p>
             <div class="flex-vertical">
                 <div class="ui-msg-escura">
                     <div class="text">
-                        <p>Aqui você visualizará o resumo da folha; assim, poderá realizar o cálculo do <b>INSS
-                                PATRONAL</b>.</p>
-                        <p>Como a empresa é optante pelo Simples Nacional, enquadrada no Anexo IV, você terá de calcular
-                            o <b>INSS PATRONAL</b>. Você deverá realizar o cálculo e selecionar o valor correto.</p>
-                        <p>Após ter recebido o <em>feedback</em> positivo na fórmula, você poderá emitir as guias e os
-                            recibos, basta clicar nos nomes correspondentes.</p>
+                        <p>
+                            Como a empresa é optante pelo Simples Nacional, enquadrada no Anexo IV, você terá que
+                            realizar o cálculo do <strong>INSS PATRONAL</strong>. Após confirme o resultado do cálculo
+                            encontrado, selecionando a resposta correta na lista de valores informados.
+
+                        </p>
+                        <p>Após ter recebido o <i>feedback</i> positivo, você irá visualizar o resumo da folha, as guias
+                            dos encargos sociais e os recibos de pagamentos.</p>
+
                     </div>
                 </div>
                 <div class="comprovantes-bts">
@@ -258,103 +282,118 @@
             <div class="flex">
                 <div class="row">
                     <div class="col-md-6">
-                      <table class="table estilo-tabela">
-                        <thead class="estilo-tabela-thead "> 
-                            <tr class="sombrinha">
-                                <td colspan="3" class="estilo-tabela-titulo">Tabela Contribuição Previdenciária INSS – 2024 (Alíquotas aplicadas de FORMA PROGRESSIVA)</td>
-                              </tr> 
-                          <tr>
-                            <th scope="col">Salário Contribuição</th>
-                            <th scope="col">Alíquota</th>
-                            <th scope="col">Parcela a Deduzir</th>
-                          </tr>
-                        </thead>
-                        <tbody class="estilo-tabela-tbody">
-                          <tr>
-                            <td>Até R$ 1.320,00</td>
-                            <td>7,50%</td>
-                            <td>R$ 0,00</td>
-                          </tr>
-                          <tr>
-                            <td>De R$ 1.320,01 até R$ 2.571,29</td>
-                            <td>9%</td>
-                            <td>R$ 19,80</td>
-                          </tr>
-                          <tr>
-                            <td>De R$ 2.571,30 até R$ 3.856,94</td>
-                            <td>12%</td>
-                            <td>R$ 96,94</td>
-                          </tr>
-                          <tr>
-                            <td>De R$ 3.856,95 até R$ 7.507,49</td>
-                            <td>14%</td>
-                            <td>R$ 174,08</td>
-                          </tr>
-                        </tbody>
-                        <tfoot class="estilo-tabela-tfooter">
-                          <tr class="sombrinha">
-                            <td colspan="3">Vigência de: 01.05.2023 até 31.12.2024</td>
-                          </tr>
-                          <tr class="sombrinha">
-                            <td colspan="3">fonte: https://www.hiperservicos.com.br/tabela-atual</td>
-                          </tr> 
-                        </tfoot>
-                      </table>
+                        <table class="table estilo-tabela">
+                            <thead class="estilo-tabela-thead ">
+                                <tr class="sombrinha">
+                                    <td colspan="3" class="estilo-tabela-titulo">Tabela Contribuição Previdenciária INSS
+                                        – 2024 (Alíquotas aplicadas de FORMA PROGRESSIVA)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Salário Contribuição</th>
+                                    <th scope="col">Alíquota</th>
+                                    <th scope="col">Parcela a Deduzir</th>
+                                </tr>
+                            </thead>
+                            <tbody class="estilo-tabela-tbody">
+                                <tr>
+                                    <td>Até R$ 1.412,00</td>
+                                    <td>7,50%</td>
+                                    <td>R$ 0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>De R$ 1.412,01 até R$ 2.666,68</td>
+                                    <td>9%</td>
+                                    <td>R$ 21,18</td>
+                                </tr>
+                                <tr>
+                                    <td>De R$ 2.666,69 até R$ 4.000,03</td>
+                                    <td>12%</td>
+                                    <td>R$ 101,18</td>
+                                </tr>
+                                <tr>
+                                    <td>De R$ 4.000,04 até R$ 7.786,02</td>
+                                    <td>14%</td>
+                                    <td>R$ 181,18</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="estilo-tabela-tfooter">
+                                <tr class="sombrinha">
+                                    <td colspan="3">Vigência de: 01.01.2024 até 31.12.2024</td>
+                                </tr>
+                                <tr class="sombrinha">
+                                    <td colspan="3">fonte: https://www.hiperservicos.com.br/tabela-atual</td>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
                     <div class="col-md-6">
-                      <table class="table estilo-tabela">
-                        <thead class="estilo-tabela-thead">
-                          <tr class="sombrinha">
-                            <td class="estilo-tabela-titulo" colspan="4">Tabela IRRF Progressiva Alternativa</td>
-                          </tr>
-                          <tr>
-                            <th scope="col">De</th>
-                            <th scope="col">Até</th>
-                            <th scope="col">Alíquota</th>
-                            <th scope="col">Dedução</th>
-                          </tr>
-                        </thead>
-                        <tbody class="estilo-tabela-tbody">
-                          <tr>
-                            <td>-</td>
-                            <td>R$ 2.112,00</td>
-                            <td>ISENTO</td>
-                            <td>R$ 0,00</td>
-                          </tr>
-                          <tr>
-                            <td>R$ 2.112,01</td>
-                            <td>R$ 2.826,65</td>
-                            <td>7,50%</td>
-                            <td>R$ 158,40</td>
-                          </tr>
-                          <tr>
-                            <td>R$ 2.826,66</td>
-                            <td>R$ 3.751,05</td>
-                            <td>15%</td>
-                            <td>R$ 370,40</td>
-                          </tr>
-                          <tr>
-                            <td>R$ 3.751,06</td>
-                            <td>R$ 4.664,68</td>
-                            <td>22,50%</td>
-                            <td>R$ 651,73</td>
-                          </tr>
-                          <tr>
-                            <td>ACIMA DE</td>
-                            <td>R$ 4.664,68</td>
-                            <td>27,50%</td>
-                            <td>R$ 884,96</td>
-                          </tr>
-                        </tbody>
-                        <tfoot class="estilo-tabela-tfooter">
-                          <tr class="sombrinha">
-                            <td colspan="4">Dedução por dependente R$189,59</td>
-                          </tr>
-                          <tr class="sombrinha">
-                            <td colspan="4">fonte: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/Mpv/mpv1171.html</td>
-                          </tr> 
-                        </tfoot>
-                      </table>
+                        <table class="table estilo-tabela">
+                            <thead class="estilo-tabela-thead">
+                                <tr class="sombrinha">
+                                    <td class="estilo-tabela-titulo" colspan="4">Tabela IRRF Progressiva Alternativa
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">De</th>
+                                    <th scope="col">Até</th>
+                                    <th scope="col">Alíquota</th>
+                                    <th scope="col">Dedução</th>
+                                </tr>
+                            </thead>
+                            <tbody class="estilo-tabela-tbody">
+                                <tr>
+                                    <td>-</td>
+                                    <td>R$ 2.259,20</td>
+                                    <td>ISENTO</td>
+                                    <td>R$ 0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>R$ 2.259,21</td>
+                                    <td>R$ 2.826,65</td>
+                                    <td>7,50%</td>
+                                    <td>R$ 169,44</td>
+                                </tr>
+                                <tr>
+                                    <td>R$ 2.826,66</td>
+                                    <td>R$ 3.751,05</td>
+                                    <td>15%</td>
+                                    <td>R$ 381,44</td>
+                                </tr>
+                                <tr>
+                                    <td>R$ 3.751,06</td>
+                                    <td>R$ 4.664,68</td>
+                                    <td>22,50%</td>
+                                    <td>R$ 662,77</td>
+                                </tr>
+                                <tr>
+                                    <td>ACIMA DE</td>
+                                    <td>R$ 4.664,68</td>
+                                    <td>27,50%</td>
+                                    <td>R$ 896,00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="estilo-tabela-tfooter">
+                                <tr class="sombrinha">
+                                    <td colspan="4">Rendimentos previdenciários para isentos para maiores de 65 anos: R$
+                                        1.903,98 <br>Dedução por dependente R$ 189,59<br>Limite mensal de desconto
+                                        simplificado: R$ 564,80 </td>
+                                </tr>
+                                <tr class="sombrinha">
+                                    <td colspan="4">fonte:
+                                        https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="col-12">
+                        <div class="ui-msg" style="max-width: 650px;
+                        margin: auto; text-align: left;">
+                            <h3>Cálculo DSR</h3>
+                            <p style="text-align: left !important;">DSR: Mês de referência: Agosto de 2024 (tem 30
+                                dias, sendo que 27 dias úteis, 4 dias de descanço remunerado. <strong>obs:</strong> O
+                                mês de agosto/2024, tem 31 dias, sendo que 27 dias úteis e quatro domingos. </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -364,113 +403,125 @@
             <div class="flex">
                 <div>
                     <table class="table estilo-tabela">
-                      <thead class="estilo-tabela-thead">
-                        <tr>
-                          <td class="estilo-tabela-titulo" colspan="4">Dados para FOLHA DE PAGAMENTO SETEMBRO/2023</td>
-                        </tr>
-                        <tr>
-                          <td class="estilo-tabela-titulo" colspan="4">Osvaldo e Luzia Serviços de Limpeza e Conservação Ltda</td>
-                        </tr>
-                        <tr>
-                          <td class="estilo-tabela-titulo" colspan="4">CNPJ: 60.693.507/0001-08</td>
-                        </tr>
-                        <tr>
-                          <td class="estilo-tabela-titulo tr-subtitulo" colspan="4">Empresa optante Simples Nacional - Anexo IV</td>
-                        </tr>
-                      </thead>
-                      <tbody class="estilo-tabela-tbody">
-                        <tr>          
-                          <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">COLABORADOR: SOLANGE MARIA PEREIRA</td> 
-                          <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">COLABORADOR: MARIANA MORAES DA ROSA</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">SALÁRIO</td>
-                          <td>R$ 1.890,00</td>
-                          <td class="td-descricao">SALÁRIO</td>
-                          <td>R$ 2.100,00</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Comissão</td>
-                          <td>R$ 1.285,00</td>
-                          <td class="td-descricao">Comissão</td>
-                          <td>R$ 1.490,00</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Hora Extra</td>
-                          <td>3 horas a 50%</td>
-                          <td class="td-descricao">Hora Extra</td>
-                          <td>4 horas a 50%</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Vale Transporte</td>
-                          <td>6%</td>
-                          <td class="td-descricao">Vale Transporte</td>
-                          <td>6%</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Vale Alimentação</td>
-                          <td>R$25,00 - desconto de 10%</td>
-                          <td class="td-descricao">Vale Alimentação</td>
-                          <td>R$25,00 - desconto de 10%</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Adiantamento de salário</td>
-                          <td>R$ 720,00</td>
-                          <td class="td-descricao">Adiantamento de salário</td>
-                          <td>R$ 810,00</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Hora de atraso</td>
-                          <td>3 horas</td>
-                          <td class="td-descricao">Hora de atraso</td>
-                          <td>2 horas</td>
-                        </tr> 
-                      </tbody>
-                      <tfoot class="estilo-tabela-tfooter">
-                        <tr class="sombrinha">
-                            <td colspan="2">Possui um dependente de 4 anos</td>
-                            <td colspan="2">Possui um dependente de 10 anos</td>
-                          </tr>
-                      </tfoot>
+                        <thead class="estilo-tabela-thead">
+                            <tr>
+                                <td class="estilo-tabela-titulo" colspan="4">Dados para FOLHA DE PAGAMENTO AGOSTO/2024
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="estilo-tabela-titulo" colspan="4">Osvaldo e Luzia Serviços de Limpeza e
+                                    Conservação Ltda</td>
+                            </tr>
+                            <tr>
+                                <td class="estilo-tabela-titulo" colspan="4">CNPJ: 60.693.507/0001-08</td>
+                            </tr>
+                            <tr>
+                                <td class="estilo-tabela-titulo tr-subtitulo" colspan="4">Empresa optante Simples
+                                    Nacional - Anexo IV</td>
+                            </tr>
+                        </thead>
+                        <tbody class="estilo-tabela-tbody">
+                            <tr>
+                                <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">COLABORADOR: SOLANGE MARIA
+                                    PEREIRA</td>
+                                <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">COLABORADOR: MARIANA MORAES DA
+                                    ROSA</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">SALÁRIO</td>
+                                <td>R$ 1.890,00</td>
+                                <td class="td-descricao">SALÁRIO</td>
+                                <td>R$ 2.100,00</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Comissão</td>
+                                <td>R$ 1.285,00</td>
+                                <td class="td-descricao">Comissão</td>
+                                <td>R$ 1.490,00</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Hora Extra</td>
+                                <td>3 horas a 50%</td>
+                                <td class="td-descricao">Hora Extra</td>
+                                <td>4 horas a 50%</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Vale Transporte</td>
+                                <td>6%</td>
+                                <td class="td-descricao">Vale Transporte</td>
+                                <td>6%</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Vale Alimentação</td>
+                                <td>R$25,00 - desconto de 10%</td>
+                                <td class="td-descricao">Vale Alimentação</td>
+                                <td>R$25,00 - desconto de 10%</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Adiantamento de salário</td>
+                                <td>R$ 720,00</td>
+                                <td class="td-descricao">Adiantamento de salário</td>
+                                <td>R$ 810,00</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Hora de atraso</td>
+                                <td>3 horas</td>
+                                <td class="td-descricao">Hora de atraso</td>
+                                <td>2 horas</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="estilo-tabela-tfooter">
+                            <tr class="sombrinha">
+                                <td colspan="2">Possui um dependente de 4 anos</td>
+                                <td colspan="2">Possui um dependente de 10 anos</td>
+                            </tr>
+                        </tfoot>
                     </table>
                     <br>
                     <table class="table estilo-tabela">
-                      <thead class="estilo-tabela-thead">
-                        <tr>
-                          <td class="estilo-tabela-titulo tr-subtitulo" colspan="4">Base de cálculo dos sócios</td>
-                        </tr>
-                      </thead>
-                      <tbody class="estilo-tabela-tbody">
-                        <tr>          
-                          <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">Sócia: Michele Louzada</td> 
-                          <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">Sócio: Rodrigo Vieira</td>
-                        </tr>
-                        <tr>
-                          <td class="td-descricao">Pró-labore</td>
-                          <td>R$ 3.500,00</td>
-                          <td class="td-descricao">Pró-labore</td>
-                          <td>R$ 3.500,00</td>
-                        </tr> 
-                      </tbody>
-                      <tfoot class="estilo-tabela-tfooter">
-                        <tr class="sombrinha">
-                          <td colspan="2">Possui um dependente de 13 anos</td>
-                          <td colspan="2">Possui um dependente de 13 anos</td>
-                        </tr>
-                        <tr class="sombrinha">
-                            <td colspan="2"></td>
-                            <td colspan="2">Possui um dependente de 5 anos</td>
-                          </tr>
-                      </tfoot>
+                        <thead class="estilo-tabela-thead">
+                            <tr>
+                                <td class="estilo-tabela-titulo tr-subtitulo" colspan="4">Base de cálculo dos sócios
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="estilo-tabela-tbody">
+                            <tr>
+                                <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">Sócia: Michele Louzada</td>
+                                <td colspan="2" class="estilo-tabela-titulo tr-subtitulo">Sócio: Rodrigo Vieira</td>
+                            </tr>
+                            <tr>
+                                <td class="td-descricao">Pró-labore</td>
+                                <td>R$ 3.500,00</td>
+                                <td class="td-descricao">Pró-labore</td>
+                                <td>R$ 3.500,00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="estilo-tabela-tfooter">
+                            <tr class="sombrinha">
+                                <td colspan="2">Possui um dependente de 13 anos</td>
+                                <td colspan="2">Possui um dependente de 13 anos</td>
+                            </tr>
+                            <tr class="sombrinha">
+                                <td colspan="2"></td>
+                                <td colspan="2">Possui um dependente de 5 anos</td>
+                            </tr>
+                        </tfoot>
                     </table>
-                  </div>
+
+                </div>
+
 
             </div>
         </div>
         <div class="pop-up pop-up-3" data-pop="3">
-            <p>A seguir você encontrará as fórmulas. Faça o cálculo indicado e selecione a resposta correta!</p>
+            <div class="alert alert-primary avisogenerico">
+                <p>A seguir você encontrará as fórmulas. Faça o cálculo
+                    indicado e selecione a resposta correta!</p>
+            </div>
 
-            <h4>Fórmulas Solange Maria Pereira</h4>
+
+            <h4>FÓRMULA PARA CÁLCULO DO SALÁRIO: COLABORADORA SOLANGE MARIA PEREIRA</h4>
             <table>
                 <tr>
                     <th colspan="4">HORAS 50% = [(SALÁRIO-BASE/220) x HORAS EXTRAS]+50%</th>
@@ -510,27 +561,28 @@
             </table>
             <table>
                 <tr>
-                    <th colspan="3">DSR HORA EXTRA = (HORAS 50% / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)</th>
+                    <th colspan="3">DSR HORA EXTRA = (HORAS 50% / 27 DIAS ÚTEIS x 4 DOMINGOS)
+                    </th>
                 </tr>
                 <tr>
                     <th>Total hora extra 50%</th>
                     <th>
                         R$ dia útil<br>
-                        (Total hora extra R$/24 DIAS ÚTEIS)
+                        (Total hora extra R$/27 DIAS ÚTEIS)
                     </th>
                     <th>
                         Total do DSR<br>
-                        (R$ dia útil x 6 dias)
+                        (R$ dia útil x 4 dias)
                     </th>
                 </tr>
                 <tr>
                     <td>R$ 38,66</td>
-                    <td>R$ 1,61</td>
+                    <td>R$ 1,43</td>
                     <td class="select-container">
                         <select name="formula-2" id="formula-2">
                             <option value=""> </option>
                             <option value="errado">R$ 7,52</option>
-                            <option value="correto">R$ 9,66</option>
+                            <option value="correto">R$ 5,73</option>
                             <option value="errado">R$ 10,37</option>
                             <option value="errado">R$ 11,49</option>
                         </select>
@@ -540,44 +592,44 @@
             <table>
                 <tr>
                     <th colspan="3">
-                        DSR COMISSÃO = (COMISSÃO / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)
+                        DSR COMISSÃO = (COMISSÃO / 27 DIAS ÚTEIS) x 4 DOMINGOS
                     </th>
                 </tr>
                 <tr>
                     <th>COMISSÃO</th>
                     <th>
                         R$ dia útil<br>
-                        (Total comissão/24 DIAS ÚTEIS)
+                        (Total comissão/27 DIAS ÚTEIS)
                     </th>
                     <th>
                         Total do DSR<br>
-                        (R$ dia útil x 6 dias)
+                        (R$ dia útil x 4 dias)
                     </th>
                 </tr>
                 <tr>
                     <td> R$ 1.285,00 </td>
-                    <td> R$ 53,54 </td>
+                    <td> R$ 47,59 </td>
                     <td class="select-container">
                         <select name="formula-3" id="formula-3">
                             <option value=""> </option>
                             <option value="errado">R$ 256,54</option>
                             <option value="errado">R$ 299,81</option>
                             <option value="errado">R$ 304,16</option>
-                            <option value="correto">R$ 312,25</option>
+                            <option value="correto">R$ 190,37</option>
                         </select>
                     </td>
                 </tr>
             </table>
             <table>
                 <tr>
-                    <th colspan="3">DESCONTO VALE-ALIMENTAÇÃO = (VALOR DO VALE X 24 DIAS ÚTEIS) X 10% </th>
+                    <th colspan="3">DESCONTO VALE-ALIMENTAÇÃO = (VALOR DO VALE X 27 DIAS ÚTEIS) X 10% </th>
                 </tr>
                 <tr>
                     <th>VALE-ALIMENTAÇÃO<br>
                         VALOR DIA</th>
                     <th>
                         Total do mês<br>
-                        (VALE-ALIMENTAÇÃO VALOR DIA /24 DIAS ÚTEIS)
+                        (VALE-ALIMENTAÇÃO VALOR DIA /27 DIAS ÚTEIS)
                     </th>
                     <th>
                         Desconto VA<br>
@@ -586,12 +638,12 @@
                 </tr>
                 <tr>
                     <td> R$ 25,00 </td>
-                    <td> R$ 600,00 </td>
+                    <td> R$ 675,00 </td>
                     <td class="select-container">
                         <select name="formula-4" id="formula-4">
                             <option value=""> </option>
                             <option value="errado">R$ 35,00</option>
-                            <option value="correto">R$ 60,00</option>
+                            <option value="correto">R$ 67,50</option>
                             <option value="errado">R$ 75,00</option>
                             <option value="errado">R$ 80,00</option>
                         </select>
@@ -681,17 +733,17 @@
                     </th>
                 </tr>
                 <tr>
-                    <td> R$ 3.518,80 </td>
+                    <td> R$ 3.383,98 </td>
                     <td>12%</td>
-                    <td> R$ 422,26 </td>
-                    <td> R$ 96,94 </td>
+                    <td> R$ 406,08 </td>
+                    <td> R$ 101,18 </td>
                     <td class="select-container">
                         <select name="formula-7" id="formula-7">
                             <option value=""> </option>
                             <option value="errado">R$ 218,44</option>
                             <option value="errado">R$ 287,26</option>
                             <option value="errado">R$ 316,84</option>
-                            <option value="correto">R$ 325,32</option>
+                            <option value="correto">R$ 304,90</option>
                         </select>
                     </td>
                 </tr>
@@ -728,15 +780,15 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>R$ 3.193,49</td>
-                    <td>R$ 3.003,90</td>
+                    <td>R$ 3.079,09</td>
+                    <td>R$ 2.889,50</td>
                     <td>15%</td>
-                    <td>R$ 450,58</td>
-                    <td>R$ 370,40</td>
+                    <td>R$ 433,42</td>
+                    <td>R$ 381,44</td>
                     <td class="select-container">
                         <select name="formula-8" id="formula-8">
                             <option value=""> </option>
-                            <option value="correto">R$ 80,18</option>
+                            <option value="correto">R$ 51,98</option>
                             <option value="errado">R$ 92,40</option>
                             <option value="errado">R$ 107,52</option>
                             <option value="errado">R$ 119,90</option>
@@ -759,12 +811,12 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>R$ 3.518,80</td>
+                    <td>R$ 3.383,98</td>
                     <td class="select-container">
                         <select name="formula-9" id="formula-9">
                             <option value=""> </option>
                             <option value="errado">R$ 218,15</option>
-                            <option value="correto">R$ 281,50</option>
+                            <option value="correto">R$ 270,72</option>
                             <option value="errado">R$ 327,36</option>
                             <option value="errado">R$ 359,80</option>
                         </select>
@@ -772,7 +824,7 @@
                 </tr>
             </table>
 
-            <h4>Fórmulas Mariana Moraes da Rosa</h4>
+            <h4>FÓRMULA PARA CÁLCULO DO SALÁRIO: COLABORADORA MARIANA MORAES DA ROSA</h4>
             <table>
                 <tr>
                     <th colspan="4">HORAS 50% = [(SALÁRIO-BASE/220) x HORAS EXTRAS]+50%</th>
@@ -812,27 +864,28 @@
             </table>
             <table>
                 <tr>
-                    <th colspan="3">DSR HORA EXTRA = (HORAS 50% / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)</th>
+                    <th colspan="3">DSR HORA EXTRA = (HORAS 50% / 27 DIAS ÚTEIS x 4 DOMINGOS)
+                    </th>
                 </tr>
                 <tr>
                     <th>Total hora extra 50%</th>
                     <th>
                         R$ dia útil<br>
-                        (Total hora extra R$/24 DIAS ÚTEIS)
+                        (Total hora extra R$/27 DIAS ÚTEIS)
                     </th>
                     <th>
                         Total do DSR<br>
-                        (R$ dia útil x 6 dias)
+                        (R$ dia útil x 4 dias)
                     </th>
                 </tr>
                 <tr>
                     <td>R$ 57,27</td>
-                    <td>R$ 2,39</td>
+                    <td>R$ 2,12</td>
                     <td class="select-container">
                         <select name="formula-11" id="formula-11">
                             <option value=""> </option>
                             <option value="errado">R$ 13,39</option>
-                            <option value="correto">R$ 14,32</option>
+                            <option value="correto">R$ 8,48</option>
                             <option value="errado">R$ 14,87</option>
                             <option value="errado">R$ 15,25</option>
                         </select>
@@ -842,27 +895,27 @@
             <table>
                 <tr>
                     <th colspan="3">
-                        DSR COMISSÃO = (COMISSÃO / 24 DIAS ÚTEIS) x 6 (4 DOMINGOS E 2 FERIADOS)
+                        DSR COMISSÃO = (COMISSÃO / 27 DIAS ÚTEIS) x 4 DOMINGOS
                     </th>
                 </tr>
                 <tr>
                     <th>COMISSÃO</th>
                     <th>
                         R$ dia útil<br>
-                        (Total comissão/24 DIAS ÚTEIS)
+                        (Total comissão/27 DIAS ÚTEIS)
                     </th>
                     <th>
                         Total do DSR<br>
-                        (R$ dia útil x 6 dias)
+                        (R$ dia útil x 4 dias)
                     </th>
                 </tr>
                 <tr>
                     <td> R$ 1.490,00 </td>
-                    <td> R$ 62,08 </td>
+                    <td> R$ 55,19 </td>
                     <td class="select-container">
                         <select name="formula-12" id="formula-12">
                             <option value=""> </option>
-                            <option value="correto">R$ 372,50</option>
+                            <option value="correto">R$ 220,74</option>
                             <option value="errado">R$ 426,39</option>
                             <option value="errado">R$ 491,24</option>
                             <option value="errado">R$ 528,12</option>
@@ -872,14 +925,14 @@
             </table>
             <table>
                 <tr>
-                    <th colspan="3">DESCONTO VALE-ALIMENTAÇÃO = (VALOR DO VALE X 24 DIAS ÚTEIS) X 10% </th>
+                    <th colspan="3">DESCONTO VALE-ALIMENTAÇÃO = (VALOR DO VALE X 27 DIAS ÚTEIS) X 10% </th>
                 </tr>
                 <tr>
                     <th>VALE-ALIMENTAÇÃO<br>
                         VALOR DIA</th>
                     <th>
                         Total do mês<br>
-                        (VALE-ALIMENTAÇÃO VALOR DIA /24 DIAS ÚTEIS)
+                        (VALE-ALIMENTAÇÃO VALOR DIA /27 DIAS ÚTEIS)
                     </th>
                     <th>
                         Desconto VA<br>
@@ -888,14 +941,14 @@
                 </tr>
                 <tr>
                     <td> R$ 25,00 </td>
-                    <td> R$ 600,00 </td>
+                    <td> R$ 675,00 </td>
                     <td class="select-container">
                         <select name="formula-13" id="formula-13">
                             <option value=""> </option>
                             <option value="errado">R$ 25,00</option>
                             <option value="errado">R$ 30,00</option>
                             <option value="errado">R$ 45,00</option>
-                            <option value="correto">R$ 60,00</option>
+                            <option value="correto">R$ 67,50</option>
                         </select>
                     </td>
                 </tr>
@@ -919,9 +972,9 @@
                         <select name="formula-14" id="formula-14">
                             <option value=""> </option>
                             <option value="errado">R$ 110,00</option>
-                            <option value="errado">R$ 126,00</option>
+                            <option value="errado">R$ 182,00</option>
                             <option value="errado">R$ 144,00</option>
-                            <option value="correto">R$ 182,00</option>
+                            <option value="correto">R$ 126,00</option>
                         </select>
                     </td>
                 </tr>
@@ -983,17 +1036,17 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>R$ 4.015,00</td>
-                    <td>14%</td>
-                    <td>R$ 562,10</td>
-                    <td>R$ 174,08</td>
+                    <td>R$ 3.857,41</td>
+                    <td>12%</td>
+                    <td>R$ 462,89</td>
+                    <td>R$ 101,18</td>
                     <td class="select-container">
                         <select name="formula-16" id="formula-16">
                             <option value=""> </option>
                             <option value="errado">R$ 388,02</option>
                             <option value="errado">R$ 419,10</option>
                             <option value="errado">R$ 463,57</option>
-                            <option value="correto">R$ 531,63</option>
+                            <option value="correto">R$ 361,71/option>
                         </select>
                     </td>
                 </tr>
@@ -1030,17 +1083,17 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>R$ 3.626,98</td>
-                    <td>R$ 3.437,39</td>
+                    <td>R$ 3.495,70</td>
+                    <td>R$ 3.306,11</td>
                     <td>15%</td>
-                    <td>R$ 515,61</td>
-                    <td>R$ 370,40</td>
+                    <td>R$ 495,92</td>
+                    <td>R$ 381,44</td>
                     <td class="select-container">
                         <select name="formula-17" id="formula-17">
                             <option value=""> </option>
                             <option value="errado">R$ 112,34</option>
                             <option value="errado">R$ 128,57</option>
-                            <option value="correto">R$ 145,21</option>
+                            <option value="correto">R$ 114,48</option>
                             <option value="errado">R$ 159,82</option>
                         </select>
                     </td>
@@ -1061,13 +1114,13 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>R$ 4.015,00</td>
+                    <td>R$ 3.857,41</td>
                     <td class="select-container">
                         <select name="formula-18" id="formula-18">
                             <option value=""> </option>
                             <option value="errado">R$ 247,82</option>
-                            <option value="correto">R$ 284,60</option>
-                            <option value="errado">R$ 308,27</option>
+                            <option value="correto">R$ 308,59</option>
+                            <option value="errado">R$ 305,27</option>
                             <option value="errado">R$ 321,20</option>
                         </select>
                     </td>
@@ -1081,7 +1134,7 @@
             <div class="flex">
                 <table>
                     <tr>
-                        <th colspan='4'>Resumo do Cálculo da Folha de pagamento Setembro/2023</th>
+                        <th colspan='4'>Resumo do Cálculo da Folha de pagamento Agosto/2024</th>
                     </tr>
                     <tr>
                         <th colspan='4'>Empresa: Osvaldo e Luzia Serviços de Limpeza e Conservação Ltda.</th>
@@ -1243,7 +1296,7 @@
             </div>
         </div>
         <div class="pop-up pop-up-5" data-pop="5">
-            <h4>Fórmulas Michele Louzada</h4>
+            <h4>FÓRMULA PARA CÁLCULO DO PRO-LABORE SÓCIA MICHELE LOUZADA</h4>
             <table>
                 <tr>
                     <th colspan="3">DESCONTO INSS SÓCIO = (TOTAL BRUTO x ALÍQUOTA DO INSS) - DEDUÇÃO DO INSS</th>
@@ -1278,7 +1331,8 @@
             </table>
             <table>
                 <tr>
-                    <th colspan="6">BASE DE CÁLCULO IRRF = TOTAL BRUTO - HORAS FALTA  - DESCONTO INSS - VL DEPENDENTES</th>
+                    <th colspan="6">BASE DE CÁLCULO IRRF = TOTAL BRUTO - HORAS FALTA - DESCONTO INSS - VL DEPENDENTES
+                    </th>
                 </tr>
                 <tr>
                     <th>
@@ -1324,7 +1378,7 @@
                 </tr>
             </table>
 
-            <h4>Fórmulas Rodrigo Vieira</h4>
+            <h4>FÓRMULA PARA CÁLCULO DO PRO-LABORE: SÓCIO RODRIGO VIEIRA</h4>
             <table>
                 <tr>
                     <th colspan="3">DESCONTO INSS SÓCIO = (TOTAL BRUTO x ALÍQUOTA DO INSS) - DEDUÇÃO DO INSS</th>
@@ -1359,7 +1413,8 @@
             </table>
             <table>
                 <tr>
-                    <th colspan="6">BASE DE CÁLCULO IRRF = TOTAL BRUTO - HORAS FALTA  - DESCONTO INSS - VL DEPENDENTES</th>
+                    <th colspan="6">BASE DE CÁLCULO IRRF = TOTAL BRUTO - HORAS FALTA - DESCONTO INSS - VL DEPENDENTES
+                    </th>
                 </tr>
                 <tr>
                     <th>
@@ -1411,7 +1466,7 @@
             <button class="bt-fechar-pop-up ui-btn">Voltar</button>
             <table>
                 <tr>
-                    <th colspan="4">Resumo do cálculo da folha de pagamento dos sócios Setembro/2023</th>
+                    <th colspan="4">Resumo do cálculo da folha de pagamento dos sócios Agosto/2024</th>
                 </tr>
                 <tr>
                     <th colspan="4">Empresa: Osvaldo e Luzia Serviços de Limpeza e Conservação Ltda.</th>
@@ -1450,18 +1505,18 @@
                 <tr>
                     <td colspan="2"></td>
                     <td>Desconto IRRF</td>
-                    <td>68,41</td>
+                    <td>57,37</td>
                 </tr>
                 <tr class="sub-header">
                     <th>Total Bruto</th>
                     <th>3.500,00</th>
                     <th>Total de descontos</th>
-                    <th>453,41</th>
+                    <th>442,37</th>
                 </tr>
                 <tr class="sub-header">
                     <th colspan="2"></th>
                     <th>Total líquido</th>
-                    <th>3.046,59</th>
+                    <th>3.057,63</th>
                 </tr>
                 <tr class="sub-header">
                     <th colspan="4">Total dos encargos</th>
@@ -1469,12 +1524,12 @@
                 <tr>
                     <th>Total de INSS</th>
                     <th>385,00</th>
-                    
+
                 </tr>
                 <tr>
                     <th>Total de IRRF</th>
-                    <th>68,41</th>
-                    
+                    <th> 57,37</th>
+
                 </tr>
             </table>
             <table>
@@ -1509,18 +1564,18 @@
                 <tr>
                     <td colspan="2"></td>
                     <td>Desconto IRRF</td>
-                    <td>46,79</td>
+                    <td>35,75</td>
                 </tr>
                 <tr class="sub-header">
                     <th>Total Bruto</th>
                     <th>3.500,00</th>
                     <th>Total de descontos</th>
-                    <th>431,79</th>
+                    <th>420,75</th>
                 </tr>
                 <tr class="sub-header">
                     <th colspan="2"></th>
                     <th>Total líquido</th>
-                    <th>3.068,21</th>
+                    <th>3.079,25</th>
                 </tr>
                 <tr class="sub-header">
                     <th colspan="4">Total dos encargos</th>
@@ -1528,12 +1583,12 @@
                 <tr>
                     <th>Total de INSS</th>
                     <th>385,00</th>
-                    
+
                 </tr>
                 <tr>
                     <th>Total de IRRF</th>
-                    <th>46,79</th>
-                    
+                    <th>35,75</th>
+
                 </tr>
             </table>
         </div>
@@ -1543,8 +1598,8 @@
                     <th tr colspan="2">Resumo da folha de pagamento</th>
                 </tr>
                 <tr class="sub-header">
-                    <th>Total de descontos</th>
-                    <th>2.988,19</th>
+                    <th>TOTAL DE PROVENTOS</th>
+                    <th> 14.286,26</th>
                 </tr>
                 <tr>
                     <td>Salário-base</td>
@@ -1556,7 +1611,7 @@
                 </tr>
                 <tr>
                     <td>DSR Horas extras</td>
-                    <td>23,98</td>
+                    <td>14,21</td>
                 </tr>
                 <tr>
                     <td>Comissão</td>
@@ -1564,7 +1619,7 @@
                 </tr>
                 <tr>
                     <td>DSR Comissão</td>
-                    <td>693,75</td>
+                    <td>411,11</td>
                 </tr>
                 <tr>
                     <td>Pró-labore</td>
@@ -1572,7 +1627,7 @@
                 </tr>
                 <tr class="sub-header">
                     <th>Total de descontos</th>
-                    <th>2.988,19</th>
+                    <th>2.875,45</th>
                 </tr>
                 <tr>
                     <td>Desconto adiantamento</td>
@@ -1580,7 +1635,7 @@
                 </tr>
                 <tr>
                     <td>Desconto Vale-alimentação</td>
-                    <td>120,00</td>
+                    <td>135,00</td>
                 </tr>
                 <tr>
                     <td>Desconto VT</td>
@@ -1592,11 +1647,11 @@
                 </tr>
                 <tr>
                     <td>Desconto INSS</td>
-                    <td>713,34</td>
+                    <td>666,61</td>
                 </tr>
                 <tr>
                     <td>Desconto IRRF</td>
-                    <td>340,59</td>
+                    <td>259,58</td>
                 </tr>
                 <tr>
                     <td>Desconto INSS (11%)</td>
@@ -1604,22 +1659,22 @@
                 </tr>
                 <tr class="sub-header">
                     <td>Total líquido</td>
-                    <td>10.820,47</td>
+                    <td>10.640,81</td>
                 </tr>
                 <tr>
                     <td>Total líquido</td>
-                    <td>4.705,67</td>
+                    <td>4.503,92</td>
                 </tr>
                 <tr>
                     <td>Total líquido</td>
-                    <td>6.114,80</td>
+                    <td>6.136,88</td>
                 </tr>
                 <tr class="sub-header">
                     <th colspan="2">Total INSS patronal</th>
                 </tr>
                 <tr>
                     <td>Base INSS patronal</td>
-                    <td>14.533,80</td>
+                    <td>14.241,39</td>
                 </tr>
                 <tr>
                     <td>20% sobre a folha de pagamento</td>
@@ -1627,7 +1682,7 @@
                         <select name="formula-20" id="formula-20">
                             <option value=""> </option>
                             <option value="errado">R$ 1.548,32</option>
-                            <option value="correto">R$ 2.906,76</option>
+                            <option value="correto">R$ 2.848,28</option>
                             <option value="errado">R$ 3.193,49</option>
                             <option value="errado">R$ 3.518,80</option>
                         </select>
@@ -1635,11 +1690,11 @@
                 </tr>
                 <tr class="sub-header">
                     <th>Total encargos</th>
-                    <th>5.333,39</th>
+                    <th>5.123,78</th>
                 </tr>
                 <tr>
                     <td>Total de INSS segurados</td>
-                    <td>713,34</td>
+                    <td>666,61</td>
                 </tr>
                 <tr>
                     <td>Total de INSS 11% contr. sócio</td>
@@ -1647,15 +1702,15 @@
                 </tr>
                 <tr>
                     <td>Total de INSS patronal</td>
-                    <td>2.906,76</td>
+                    <td>2.848,28</td>
                 </tr>
                 <tr>
                     <td>Total de IRRF</td>
-                    <td>340,59</td>
+                    <td>259,58</td>
                 </tr>
                 <tr>
                     <td>Total de FGTS</td>
-                    <td>602,70</td>
+                    <td>579,31</td>
                 </tr>
             </table>
             <button class="ui-btn checar-tabelas">Conferir resultado</button>
@@ -1678,8 +1733,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="close-modal ui-btn"
-                        data-bs-dismiss="modal">Continuar</button>
+                    <button type="button" class="close-modal ui-btn" data-bs-dismiss="modal">Continuar</button>
                 </div>
             </div>
         </div>

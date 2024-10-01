@@ -45,6 +45,19 @@ p {
   align-items: center;
   justify-content: center;
 }
+.avisoContinuar, .avisogenerico {
+  background: linear-gradient(105deg, rgb(102, 113, 134) 0%, rgb(94, 168, 189) 100%);
+  border: 0px none;
+  border-radius: 25px;
+  max-width: 600px;
+}
+
+
+.avisoContinuar p {
+  font-family: "Segoe UI";
+  font-size: 24px !important;
+  color: white;
+}
 
 p.index {
   background-color: #e8eff5;
@@ -56,6 +69,10 @@ p.index {
   left: 250px;
   color: #597994;
   font-weight: 600;
+}
+
+p.index.legenda_correcao {
+  font-size: 25px;
 }
 
 .tela-1 {
