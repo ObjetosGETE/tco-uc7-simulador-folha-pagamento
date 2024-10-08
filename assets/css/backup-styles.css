@@ -46,6 +46,7 @@ p {
   justify-content: center;
 }
 
+
 p.index {
   background-color: #e8eff5;
   border: 1px solid #20304f;
@@ -74,7 +75,6 @@ p.index.legenda_correcao {
 .tela-1 h1.title {
   background-color: white;
   box-shadow: 9px 10px #597994;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 10px 50px 10px 150px;
   padding-left: 150px;
@@ -334,7 +334,6 @@ button {
   border: 3px solid #20304f;
   margin: 15px;
   font-weight: 700;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .ui-btn:hover {
@@ -372,7 +371,6 @@ button {
   z-index: 1;
 }
 .ui-dados-empresa .ui-msg {
-  width: -moz-fit-content;
   width: fit-content;
   display: block;
   margin: auto;
@@ -638,18 +636,8 @@ table select.errado {
     font-size: 20px;
   }
 }
-.avisoContinuar, .avisogenerico {
-  background: linear-gradient(105deg, rgb(102, 113, 134) 0%, rgb(94, 168, 189) 100%);
-  border: 0px none;
-  border-radius: 25px;
-  max-width: 600px;
-  color: white;
-}
-.avisoContinuar p, .avisogenerico p {
-  font-family: "Segoe UI";
-  font-size: 24px !important;
-  color: white;
-}
+
+/*# sourceMappingURL=styles.css.map */
 
 .estilo-tabela {
   border-radius: 20px;
@@ -666,7 +654,7 @@ table select.errado {
   font-weight: bold;
 }
 
-.sombrinha {
+.sombrinha{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -691,16 +679,16 @@ table select.errado {
   padding: 10px;
 }
 
-.td-descricao {
+.td-descricao{
   background-color: #567894 !important;
   color: #ffffff !important;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
 }
 
-.tr-subtitulo {
+.tr-subtitulo{
   background-color: #247187 !important;
 }
 
 td {
   border: 1px solid #ffffff;
-}/*# sourceMappingURL=styles.css.map */
+}

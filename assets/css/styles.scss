@@ -60,6 +60,10 @@
         font-weight: 600;
     }
 
+    p.index.legenda_correcao {
+        font-size: 25px;
+      }
+
     .tela-1 {
         display: block;
         background-image: url('../img/capa/capa_BG.png');
@@ -723,3 +727,74 @@
             font-size: 20px;
         }
     }
+
+    // Overhide
+
+    .avisoContinuar, .avisogenerico {
+        background: linear-gradient(105deg, rgb(102, 113, 134) 0%, rgb(94, 168, 189) 100%);
+        border: 0px none;
+        border-radius: 25px;
+        max-width: 600px;
+        color: white;
+        p {
+            font-family: "Segoe UI";
+            font-size: 24px !important;
+            color: white;
+          }
+      }
+      
+      
+      
+.estilo-tabela {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .estilo-tabela-titulo {
+    background-color: #2c4168 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sombrinha{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .estilo-tabela-thead {
+    background-color: #567894;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .estilo-tabela-tbody {
+    background-color: #e6f4ff;
+    color: #1b2b4a;
+    border: 1px solid #ffffff;
+  }
+  
+  .estilo-tabela-tfooter {
+    background-color: #567894;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .td-descricao{
+    background-color: #567894 !important;
+    color: #ffffff !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .tr-subtitulo{
+    background-color: #247187 !important;
+  }
+  
+  td {
+    border: 1px solid #ffffff;
+  }
